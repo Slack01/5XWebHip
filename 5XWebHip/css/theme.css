@@ -1,0 +1,964 @@
+/*
+
+1. DOCUMENT SETUP
+2. PAGE PRELOADER
+3. PAGE HEADER
+    3.1 MAIN NAVIGATION
+    3.2 PAGINATION NAVI
+4. WRAPPER
+5. AJAX CONTENT
+6. BANNER
+7. WORK
+    7.1 FILTER TABS
+    7.2 WORK GRID
+    7.3 WORK DETAILS
+8. TEAM
+    8.1 TRIANGLE LINKS
+9. NEWS
+    9.1 NEWS DETAILS
+10. CONTACT
+    10.1 CONTACT DETAILS
+    10.2 GOOGLE MAP
+    10.3 CONTACT FORM
+11. FOOTER
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 1. DOCUMENT SETUP
+/* --------------------------------------------------------------------- */
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-size: 100%;
+    font-family: 'Fenix', serif;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+    color: #3d4148;
+    background: #f0f1f1;
+    overflow-y: scroll;
+}
+
+::selection {
+    background: #3d4148;
+    color: #b6ded1;
+}
+::-moz-selection {
+    background: #3d4148;
+    color: #b6ded1;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 2. PAGE PRELOADER
+/* --------------------------------------------------------------------- */
+
+#page-preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f0f1f1;
+    overflow: hidden;
+    z-index: 99999;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(0deg) translateZ(99px);
+    transform: rotateX(0deg) translateZ(99px);
+}
+
+#page-preloader .preloader-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -160px;
+    text-align: center;
+}
+
+#page-preloader .logo {
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 3. PAGE HEADER
+/* --------------------------------------------------------------------- */
+
+#page-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99998;
+}
+
+#logo {
+    position: fixed;
+    left: 50px;
+    top: 50px;
+    z-index: 98;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(0deg) translateZ(99px);
+    transform: rotateX(0deg) translateZ(99px);
+}
+
+#logo .dark {
+    display: none;
+}
+
+
+
+/* ============ 3.1 MAIN NAVIGATION ============  */
+
+#mobile-bars {
+    display: none;
+}
+
+#mobile-close {
+    display: none;
+}
+
+#main-navigation {
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#main-navigation:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+#main-navigation li {
+    float: left;
+}
+
+#main-navigation a {
+    display: block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    color: #fff;
+}
+
+#main-navigation a:hover, #main-navigation a.active {
+    text-decoration: line-through;
+}
+
+#main-navigation a.active {
+    color: #b6ded1;
+}
+
+#main-navigation.dark a {
+    color: #3d4148;
+}
+
+
+
+/* ============ 3.2 PAGINATION NAVI ============  */
+
+#pagination-navi {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 50px;
+    text-align: right;
+    z-index: 98;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(0deg) translateZ(99px);
+    transform: rotateX(0deg) translateZ(99px);
+    font-size: 1.8em;
+    line-height: 20px;
+    text-shadow: 1px 1px #e4e0cb,-1px 1px #e4e0cb, 0 -1px 1px #e4e0cb ;
+}
+
+#pagination-navi li {
+    padding: 3px 0;
+}
+
+#pagination-navi li:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+#pagination-navi .dot {
+    display: block;
+    float: right;
+    width: 8px;
+    height: 8px;
+    margin-top: 10px;
+    margin-left: 5px;
+    background: #3d4148;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.2s;
+    -moz-transition:    all 0.2s;
+    -o-transition:      all 0.2s;
+    transition:         all 0.2s;
+}
+
+#pagination-navi .name {
+    display: inline-block;
+    padding-top: 2px;
+    padding-right: 30px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition:    all 0.3s;
+    -o-transition:      all 0.3s;
+    transition:         all 0.3s;
+}
+
+#pagination-navi a {
+    display: block;
+    height: 22px;
+    padding: 1px 2px;
+    color: #3d4148;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    font-weight: 700;
+}
+
+#pagination-navi a.active .dot,
+#pagination-navi a:hover .dot {
+    width: 12px;
+    height: 12px;
+    margin-top: 7px;
+    margin-right: -2px;
+    background: none;
+    border: 2px solid #e54949 !important;
+}
+
+#pagination-navi a.active .name,
+#pagination-navi a:hover .name {
+    padding-right: 3px;
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 4. WRAPPER
+/* --------------------------------------------------------------------- */
+
+section {
+    position: relative;
+    padding: 50px 0;
+    background-image: url(../images/layout/section-background.png);
+    background-position: center top;
+    background-repeat: repeat;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+section.stand-alone {
+    padding-top: 160px;
+}
+
+section.arrow:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -10px;
+    z-index: 10;
+    border-width: 20px;
+    border-style: solid;
+    border-right-width: 0;
+    border-color: #f0f1f1;
+    border-bottom-color: transparent !important;
+    border-top-color: transparent !important;
+    border-right-color: transparent !important;
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -sand-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+section.parallax {
+    position: static;
+    z-index: 3;
+    background-color: #b6ded1;
+    background-position: center top;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-image: url(../images/layout/parallax-background.png);
+}
+
+section.parallax.image {
+    color: #fff;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-image: url(../images/layout/parallax1.jpg);
+}
+
+section.parallax:before {
+    display: none;
+}
+
+
+section.video {
+    color: #fff;
+    overflow: hidden;
+}
+
+section.video video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    z-index: -1;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 5. AJAX CONTENT
+/* --------------------------------------------------------------------- */
+
+#ajax-content {
+    display: none;
+}
+
+#ajax-closer {
+    position: fixed;
+    top: 40px;
+    left: 50px;
+    z-index: 999;
+}
+
+#ajax-content .fluid-width-video-wrapper {
+    margin-bottom: 60px;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 6. BANNER
+/* --------------------------------------------------------------------- */
+
+.banner {
+    padding: 0;
+}
+.clear {
+    position: absolute; height: 100%; width: 100%; z-index: 9998;
+}
+
+.banner-carousel .item {
+    position: relative;
+    background-position: center top;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -90px;
+    padding: 0 20px;
+    text-align: center;
+    color: #fff;
+    z-index: 4;
+    opacity: 1;
+}
+
+.banner-content h2 {
+    font-size: 3em;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.banner-content h4 {
+    margin-bottom: 40px;
+    font-size: 1.8em;
+    line-height: 1.4;
+}
+
+
+#banner-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 7. WORK
+/* --------------------------------------------------------------------- */
+
+#work {
+    padding-bottom: 20px;
+}
+
+
+
+/* ============ 7.1 FILTER TABS ============  */
+
+.filter-tabs {
+    width: 100%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.filter-tabs li {
+    display: inline-block;
+}
+
+.filter-tabs li.active .button {
+    -webkit-transform: rotateX(89deg);
+    transform: rotateX(89deg);
+}
+
+.filter-tabs li.active .button .front {
+    background: #3d4148;
+}
+
+
+
+/* ============ 7.2 WORK GRID ============  */
+
+#work-grid li {
+    display: none;
+    position: relative;
+    width: 33.33333%;
+    float: left;
+    overflow: hidden;
+}
+
+#work-grid:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+#work-grid a {
+    display: block;
+    position: relative;
+}
+
+#work-grid img {
+    float: left;
+    width: 102%;
+    margin-left: -1%;
+}
+
+#work-grid a:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+#work-grid .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(182,222,209,0.95);
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 2;
+    text-align: center;
+    color: #3d4148;
+    -webkit-transition: all 0.4s;
+    -moz-transition:    all 0.4s;
+    -o-transition:      all 0.4s;
+    transition:         all 0.4s;
+}
+
+#work-grid a:hover .layer {
+    filter: alpha(opacity=100);
+    opacity: .7;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+
+#work-grid .text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -30px;
+}
+
+#work-grid .undertitle {
+    text-transform: uppercase;
+}
+
+
+
+/* ============ 7.3 WORK DETAILS ============  */
+
+.work-carousel {
+    margin-bottom: 60px;
+    font-size: 0.9em;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 8. TEAM
+/* --------------------------------------------------------------------- */
+
+.team-member {
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+}
+
+.team-member .img-container {
+    position: relative;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.team-member img {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+.team-member .img-container:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.team-member .layer {
+    position: absolute;
+    top: -0.5%;
+    left: -0.5%;
+    width: 101%;
+    height: 101%;
+    background: rgba(182,222,209,0.95);
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 5;
+    text-align: center;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-transition: all 0.4s;
+    -moz-transition:    all 0.4s;
+    -o-transition:      all 0.4s;
+    transition:         all 0.4s;
+}
+
+.team-member:hover .layer {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.team-member .text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -25px;
+}
+
+.team-member .undertitle {
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+
+
+/* ============ 8.1 TRIANGLE LINKS ============  */
+
+.team-member .triangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 6;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    transform: scale(0);
+}
+
+.team-member .triangle:nth-child(3) {
+    left: 50%;
+    bottom: -40px;
+    margin-left: -40px;
+}
+
+.team-member .triangle:nth-child(4) {
+    left: auto;
+    right: 0;
+}
+
+.team-member .triangle:nth-child(5) {
+    left: auto;
+    right: -40px;
+    bottom: 50%;
+    margin-bottom: -40px;
+}
+
+.team-member .triangle:nth-child(6) {
+    left: auto;
+    right: 0;
+    bottom: auto;
+    top: 0;
+}
+
+.team-member .triangle:nth-child(7) {
+    left: 50%;
+    bottom: auto;
+    margin-left: -40px;
+    top: -40px;
+}
+
+.team-member .triangle:nth-child(8) {
+    left: 0;
+    bottom: auto;
+    top: 0;
+}
+
+.team-member .triangle:nth-child(9) {
+    left: -40px;
+    bottom: 50%;
+    margin-bottom: -40px;
+}
+
+.team-member:hover .triangle {
+    filter: alpha(opacity=100);
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 9. NEWS
+/* --------------------------------------------------------------------- */
+
+#news {
+    padding-bottom: 0;
+}
+
+#news-grid {
+    position: relative;
+    max-width: 1260px;
+    min-width: 260px;
+    margin: 0 auto;
+}
+
+#news-grid li {
+    position: relative;
+    padding: 15px 0;
+}
+
+#news-grid li:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+#news-grid .date {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 110px;
+    height: 45px;
+    line-height: 45px;
+    margin-left: -55px;
+    background: #3d4148;
+    color: #fff;
+    text-align: center;
+    font-size: 0.9em;
+    z-index: 8;
+}
+
+#news-grid .img-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#news-grid .img-container:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+#news-grid .img-container img {
+    float: left;
+}
+
+#news-grid .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(182,222,209,0.95);
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 7;
+    text-align: center;
+    color: #3d4148;
+    -webkit-transition: all 0.4s;
+    -moz-transition:    all 0.4s;
+    -o-transition:      all 0.4s;
+    transition:         all 0.4s;
+}
+
+#news-grid li:hover .layer {
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+#news-grid .layer .text {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    margin-top: -25px;
+}
+
+#news-grid .layer .comments {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#news-grid p {
+    margin-bottom: 10px;
+}
+
+#news-grid .read-more {
+    display: inline-block;
+    float: right;
+    padding: 0 24px 15px 0;
+    color: #3d4148;
+    background: url(../images/layout/arrow-right.png) bottom right no-repeat;
+}
+
+#news-grid .read-more:hover {
+    color: #b6ded1;
+}
+
+
+
+/* ============ 10. NEWS DETAILS ============  */
+
+.news-tags {
+    margin-bottom: 60px;
+}
+
+.news-tags span {
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 1em;
+}
+
+.news-carousel {
+    margin-bottom: 60px;
+}
+
+.news-tabs {
+    margin-top: 50px;
+}
+
+
+#comments .comment {
+    margin-bottom: 30px;
+}
+
+#comments .comment:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 2px;
+    margin-top: 30px;
+    background: #f0f1f1 url(../images/layout/parallax-background.png) repeat;
+}
+
+#comments .comment:last-child {
+    margin: 0;
+}
+
+#comments .comment:last-child:after {
+    display: none;
+}
+
+#comments .comment .name {
+    line-height: 1;
+    margin-top: -5px;
+}
+
+#add-comment input.text, #add-comment textarea {
+    max-width: none;
+    text-align: left;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 10. CONTACT
+/* --------------------------------------------------------------------- */
+
+#contact {
+    padding-bottom: 0;
+}
+
+
+
+/* ============ 10.1 CONTACT DETAILS ============  */
+
+.contact-details {
+    text-align: center;
+}
+
+.contact-details .adress {
+    text-transform: uppercase;
+}
+
+.contact-details .phone {
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+
+
+
+/* ============ 10.2 GOOGLE MAP ============  */
+
+#map-button .smaller {
+    display: none;
+}
+
+#googlemap {
+    margin-top: 60px;
+    width: 100%;
+    height: 250px;
+}
+
+div.map-popup {
+    position: relative;
+    padding: 15px 10px 20px 10px;
+    text-align: center;
+}
+
+div.map-popup h2 {
+    margin-bottom: 20px;
+}
+
+div.map-popup p {
+    font-size: 0.9em;
+}
+
+div.map-popup p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* ============ 10.3 CONTACT FORM ============  */
+
+.contact-form {
+    text-align: center;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 11. FOOTER
+/* --------------------------------------------------------------------- */
+
+#page-footer {
+    position: relative;
+    padding: 30px 0 25px 0;
+    background: #3d4148;
+    color: #fff;
+}
+
+#page-footer:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    margin-left: -10px;
+    z-index: 10;
+    border-width: 20px;
+    border-style: solid;
+    border-right-width: 0;
+    border-color: #3d4148;
+    border-bottom-color: transparent !important;
+    border-top-color: transparent !important;
+    border-right-color: transparent !important;
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -sand-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+#page-footer .bottom-line {
+    text-align: center;
+    font-size: 0.9em;
+}

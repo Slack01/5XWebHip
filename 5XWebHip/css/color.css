@@ -1,0 +1,250 @@
+/*
+
+1. FONT COLOR
+2. BACKGROUND COLOR
+3. BORDER COLOR
+4. IE BUTTON FIX COLORS
+5. SELECTION COLOR
+6. PLACEHOLDER COLOR
+
+
+
+/* --------------------------------------------------------------------- */
+/* 1. FONT COLOR
+/* --------------------------------------------------------------------- */
+
+body,
+#pagination-navi a,
+#work-grid .layer,
+#news-grid .layer,
+#news-grid .read-more,
+input.text,
+input.submit,
+textarea,
+.button .front,
+.button.white .bottom,
+.button.long .front,
+.close-button,
+.dropdown .visible-link,
+.dropdown li a,
+.triangle.white,
+.icon.dark,
+.tab-navi a,
+.accordion .title, .toggle .title {
+    color: #3d4148;
+}
+
+
+
+#main-navigation a.active,
+#news-grid .read-more:hover,
+a,
+.close-button:hover,
+.process .triangle,
+.pricing-table.top-price .price {
+    color: #fff;
+}
+
+a.triangle:hover {
+    color: #c1c1c1;
+}
+
+.icon {
+    color: #E1D396;
+}
+
+section.parallax.image,
+.banner-content,
+#news-grid .date,
+#page-footer,
+input.submit:hover,
+input.submit.dark,
+.button .bottom,
+.button.white .front,
+.button.long .bottom,
+.dropdown .visible-link.active,
+.dropdown:hover .visible-link,
+.triangle,
+.button.color .front {
+    color: #fff;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 2. BACKGROUND COLOR
+/* --------------------------------------------------------------------- */
+
+body,
+#page-preloader,
+#comments .comment:after,
+.devider,
+.dropdown ul,
+.owl-theme .owl-controls .owl-page span {
+    background-color: #f0f1f1;
+}
+
+
+
+input.submit,
+.button.white .bottom,
+.button.white:hover .front,
+.button.long .front,
+.tab-navi a,
+.tab-content-container,
+.alert-box,
+.accordion .title,
+.toggle .title,
+.accordion .content,
+.toggle .content {
+    background-color: #fff;
+}
+
+
+
+section.parallax,
+input.submit.dark:hover,
+.button.color .front,
+.button.color:hover .front,
+.accordion .title:hover,
+.toggle .title:hover,
+.accordion .title.active,
+.toggle .title.active {
+    background-color: #d3d2cd;
+}
+
+
+
+#work-grid .layer,
+.team-member .layer,
+#news-grid .layer {
+    background-color: #d3d2cd;
+}
+#work-grid .layer .text {
+    color: black !important;
+}
+
+
+
+#pagination-navi .dot,
+.filter-tabs li.active .button .front,
+#news-grid .date,
+#page-footer,
+input.submit:hover,
+input.submit.dark,
+.button .bottom,
+.button:hover .front,
+.button.long .bottom,
+.button.long:hover .front,
+.dropdown .visible-link.active,
+.dropdown:hover .visible-link,
+.white-grapper,
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background-color: #3d4148;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 3. BORDER COLOR
+/* --------------------------------------------------------------------- */
+
+#page-footer:before,
+input.text,
+textarea,
+.button .front,
+.button .bottom,
+.button.long .bottom,
+.dropdown .visible-link,
+.tab-navi a:hover,
+.tab-navi a.active {
+    border-color: #3d4148;
+}
+
+
+
+section.arrow:before {
+    border-color: #f0f1f1;
+}
+
+.button.white .front,
+.button.white .bottom,
+.button.long .front,
+.tab-navi a {
+    border-color: #fff;
+}
+
+
+
+p.highlighting,
+.button.color .front {
+    border-color: #b6ded1;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 4. IE BUTTON FIX COLORS
+/* --------------------------------------------------------------------- */
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+    .button .front:hover {
+        background: #3d4148;
+        color: #fff;
+    }
+
+    .button.white:hover .front {
+        background: #fff;
+        color: #3d4148;
+    }
+
+    .button.long:hover .front {
+        border-color: #3d4148;
+        color: #fff;
+    }
+
+    .filter-tabs li.active .button .front {
+        background: #3d4148;
+        color: #fff;
+    }
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 5. SELECTION COLOR
+/* --------------------------------------------------------------------- */
+
+::selection {
+    background: #3d4148;
+    color: #e4e0cb;
+}
+::-moz-selection {
+    background: #3d4148;
+    color: #b6ded1;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 6. PLACEHOLDER COLOR
+/* --------------------------------------------------------------------- */
+
+::-webkit-input-placeholder {
+    color: #3d4148;
+}
+:-moz-placeholder {
+    color: #3d4148;
+}
+::-moz-placeholder {
+    color: #3d4148;
+}
+:-ms-input-placeholder {
+    color: #3d4148;
+}

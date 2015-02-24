@@ -1,0 +1,1107 @@
+/*
+
+1. TYPOGRAPHY
+    1.1 HEADLINES
+    1.2 PARAGRAPHS
+2. LINKS
+3. ALIGN, DEVIDER
+    3.1 ALIGN
+    3.2 DEVIDER
+4. FORM
+5. BUTTON
+    5.1 NORMAL BUTTON
+    5.2 BIG BUTTON
+    5.3 WHITE BUTTON
+    5.4 COLOR BUTTON
+    5.5 LONG BUTTON
+    5.6 CLOSE BUTTON
+    5.7 IE 3D FIX
+6. DROPDOWN
+7. TRIANGLES
+    7.1 WHITE TRIANGLE
+    7.2 SMALL TRIANGLE
+    7.3 BIG TRIANGLE
+8. ICONS
+9. FLOAT ICON
+10. ICON BLOCK
+11. PRICING TABLE
+12. PROCESS
+13. SERVICE
+14. COUNTER
+15. ACCORDION AND TOGGLE
+16. TABS
+    16.1 TAB NAVI
+    16.2 TAB CONTENT
+17. ALERT BOX
+18. OWL CAROUSEL
+19. CLIENT CAROUSEL
+20. COMMENT CAROUSEL
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 1. TYPOGRAPHY
+/* --------------------------------------------------------------------- */
+
+/* ============ 1.1 HEADLINES ============  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+h2 {
+    font-size: 1.5em;
+}
+h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+h4 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+h5 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+h6 {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+h1.undertitle,
+h2.undertitle,
+h3.undertitle,
+h4.undertitle,
+h5.undertitle,
+h6.undertitle {
+    margin-bottom: 60px;
+    font-family: 'Fenix', serif;
+    font-weight: 400;
+}
+
+h1.underline,
+h2.underline,
+h3.underline,
+h4.underline {
+    display: block;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    background: url(../images/layout/headline-decoration.png) center bottom no-repeat;
+}
+
+h1.margin-bottom,
+h2.margin-bottom,
+h3.margin-bottom {
+    margin-bottom: 60px;
+}
+
+
+
+/* ============ 1.2 PARAGRAPHS ============  */
+
+p {
+    margin-bottom: 30px;
+    font-size: 0.9em;
+}
+
+p.text-block {
+    max-width: 900px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+}
+
+p.highlighting {
+    padding-left: 30px;
+    border-left: 3px solid #b6ded1;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 2. LINKS
+/* --------------------------------------------------------------------- */
+
+a {
+    color: #b6ded1;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition:    all 0.3s;
+    -o-transition:      all 0.3s;
+    transition:         all 0.3s;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 3. ALIGN, DEVIDER
+/* --------------------------------------------------------------------- */
+
+/* ============ 3.1 ALIGN ============  */
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+}
+
+
+
+/* ============ 3.2 DEVIDER ============  */
+
+.devider {
+    width: 100%;
+    height: 5px;
+    background: #f0f1f1 url(../images/layout/parallax-background.png) repeat;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 4. FORM
+/* --------------------------------------------------------------------- */
+
+
+input.text,
+input.submit,
+textarea {
+    font-family: 'Fenix', serif;
+    font-weight: 400;
+    line-height: 1.7;
+    letter-spacing: 0.1em;
+    color: #3d4148;
+    font-size: 0.9em;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+input.text,
+textarea {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 7px;
+    background: none;
+    border: 2px solid #3d4148;
+}
+
+textarea {
+    min-height: 100px;
+    padding: 15px;
+    overflow: hidden;
+}
+
+input.text {
+    padding: 15px;
+}
+
+
+input.submit {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #fff;
+    border: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition:    all 0.3s;
+    -o-transition:      all 0.3s;
+    transition:         all 0.3s;
+}
+input.submit:hover {
+    background: #3d4148;
+    color: #fff;
+}
+
+input.submit.dark {
+    background: #3d4148;
+    color: #fff;
+}
+input.submit.dark:hover {
+    background: #b6ded1;
+}
+
+::-webkit-input-placeholder {
+    color: #3d4148;
+    text-transform: uppercase;
+}
+:-moz-placeholder {
+    color: #3d4148;
+    text-transform: uppercase;
+}
+::-moz-placeholder {
+    color: #3d4148;
+    text-transform: uppercase;
+}
+:-ms-input-placeholder {
+    color: #3d4148;
+    text-transform: uppercase;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 5. BUTTON
+/* --------------------------------------------------------------------- */
+
+/* ============ 5.1 NORMAL BUTTON ============  */
+
+.button {
+    display: inline-block;
+    height: 54px;
+    line-height: 52px;
+    z-index: 1;
+    -webkit-transition: -webkit-transform .3s;
+    transition: transform .3s;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+
+.button .front, .button .bottom {
+    height: 54px;
+    padding: 0 25px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+
+.button .front {
+    color: #3d4148;
+    border: 2px solid #3d4148;
+    -webkit-transform: translateZ(27px);
+    transform: translateZ(27px);
+}
+
+.button .bottom {
+    color: #fff;
+    background: #3d4148;
+    border: 2px solid #3d4148;
+    -webkit-transform: rotateX(-90deg) translateZ(-27px);
+    transform: rotateX(-90deg) translateZ(-27px);
+}
+
+.button:hover .front {
+    -webkit-transition: all 0.6s;
+    -moz-transition:    all 0.6s;
+    -o-transition:      all 0.6s;
+    transition:         all 0.6s;
+    background: #3d4148;
+}
+
+.button:hover {
+    -webkit-transform: rotateX(89deg);
+    transform: rotateX(89deg);
+}
+
+
+
+/* ============ 5.2 BIG BUTTON ============  */
+
+.button.big {
+    height: 64px;
+    line-height: 62px;
+}
+
+
+.button.big .front, .button.big .bottom {
+    height: 64px;
+    padding: 0 30px;
+    font-size: 1.1em;
+}
+
+.button.big .front {
+    -webkit-transform: translateZ(32px);
+    transform: translateZ(32px);
+}
+
+.button.big .bottom {
+    -webkit-transform: rotateX(-90deg) translateZ(-32px);
+    transform: rotateX(-90deg) translateZ(-32px);
+}
+
+
+
+/* ============ 5.3 WHITE BUTTON ============  */
+
+.button.white .front {
+    color: #fff;
+    border-color: #fff;
+}
+
+.button.white .bottom {
+    color: #3d4148;
+    background: #fff;
+    border-color: #fff;
+}
+.button.white:hover .front {
+    background: #fff;
+}
+
+
+
+/* ============ 5.4 COLOR BUTTON ============  */
+
+.button.color .front {
+    color: #fff;
+    border-color: #b6ded1;
+    background: #b6ded1;
+}
+
+.button.color:hover .front {
+    background: #b6ded1;
+}
+
+
+
+
+/* ============ 5.5 LONG BUTTON ============  */
+
+.button.long {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    line-height: 78px;
+}
+
+.button.long .front, .button.long .bottom {
+    height: 80px;
+}
+
+.button.long .front {
+    color: #3d4148;
+    background: #fff;
+    border: 2px solid #fff;
+    -webkit-transform: translateZ(40px);
+    transform: translateZ(40px);
+}
+
+.button.long .bottom {
+    color: #fff;
+    background: #3d4148;
+    border: 2px solid #3d4148;
+    -webkit-transform: rotateX(-90deg) translateZ(-40px);
+    transform: rotateX(-90deg) translateZ(-40px);
+}
+
+.button.long:hover .front {
+    background: #3d4148;
+}
+
+
+
+/* ============ 5.6 CLOSE BUTTON ============  */
+
+.close-button {
+    display: inline-block;
+    float: right;
+    padding: 0 0 15px 24px;
+    color: #3d4148;
+    background: url(../images/layout/arrow-left.png) bottom left no-repeat;
+}
+
+.close-button:hover {
+    color: #b6ded1;
+}
+
+
+
+/* ============ 5.7 IE 3D FIX ============  */
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+
+    .button {
+        -webkit-transition: -webkit-transform 0;
+        transition: transform 0;
+        -webkit-transform-style: none;
+        transform-style: none;
+    }
+    .button .front {
+        -webkit-transform: none;
+        transform: none;
+    }
+    .button .bottom {
+        display: none;
+    }
+    .button:hover {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    .button .front:hover {
+        background: #3d4148;
+        color: #fff;
+    }
+
+    .button.white:hover .front {
+        background: #fff;
+        color: #3d4148;
+    }
+
+    .button.long:hover .front {
+        border-color: #3d4148;
+        color: #fff;
+    }
+
+    .filter-tabs li.active .button {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    .filter-tabs li.active .button .front {
+        background: #3d4148;
+        color: #fff;
+    }
+
+}
+
+
+
+/* --------------------------------------------------------------------- */
+/* 6. DROPDOWN
+/* --------------------------------------------------------------------- */
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    z-index: 99;
+}
+
+.dropdown .visible-link {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    height: 54px;
+    line-height: 52px;
+    padding: 0 45px 0 25px;
+    color: #3d4148;
+    border: 2px solid #3d4148;
+}
+
+.dropdown .visible-link.active,
+.dropdown:hover .visible-link {
+    color: #fff;
+    background: #3d4148;
+}
+
+.dropdown .visible-link i {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 20px;
+    font-size: 1.2em;
+}
+
+.dropdown ul {
+    display: none;
+    position: absolute;
+    top: 54px;
+    left: 0;
+    min-width: 100%;
+    padding: 20px 0;
+    background: #f0f1f1;
+    z-index: 100;
+    box-moz-box-shadow: 1px 4px 12px rgba(0,0,0,0.2);
+    -webkit-box-shadow: 1px 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 1px 4px 12px rgba(0,0,0,0.2);
+}
+
+.dropdown li a {
+    display: block;
+    padding: 4px 25px;
+    color: #3d4148;
+}
+
+.dropdown li a:hover,
+.dropdown li.active a {
+    text-decoration: line-through;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 7. TRIANGLES
+/* --------------------------------------------------------------------- */
+
+.triangle {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    background-image: url(../images/layout/triangle.svg);
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+a.triangle:hover {
+    color: #b6ded1;
+}
+
+
+
+/* ============ 7.1 WHITE TRIANGLE ============  */
+
+.triangle.white {
+    color: #3d4148;
+    background-image: url(../images/layout/triangle-white.svg);
+}
+
+
+
+/* ============ 7.2 SMALL TRIANGLE ============  */
+
+.triangle.small {
+    width: 60px;
+    height: 60px;
+    line-height: 45px;
+    font-size: 1.2em;
+}
+
+
+
+/* ============ 7.3 BIG TRIANGLE ============  */
+
+.triangle.big {
+    width: 120px;
+    height: 120px;
+    line-height: 90px;
+    font-size: 2.2em;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 8. ICONS
+/* --------------------------------------------------------------------- */
+
+.icon {
+    font-size: 4.5em;
+    color: #b6ded1;
+}
+
+.icon.small {
+    font-size: 3.5em;
+}
+
+.icon.big {
+    font-size: 5.5em;
+}
+
+.icon.dark {
+    color: #3d4148;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 9. FLOAT ICON
+/* --------------------------------------------------------------------- */
+
+.float-icon {
+    position: relative;
+    padding-left: 95px;
+}
+
+.float-icon .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    line-height: 1;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 10. ICON BLOCK
+/* --------------------------------------------------------------------- */
+
+.icon-block {
+    position: relative;
+    text-align: center;
+}
+
+.icon-block .triangle {
+    margin-bottom: 20px;
+}
+
+.icon-block p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 11. PRICING TABLE
+/* --------------------------------------------------------------------- */
+
+.pricing-table {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 30px 20px 5px 20px;
+    text-align: center;
+}
+
+.pricing-table h4 {
+    margin-bottom: 25px;
+}
+
+.pricing-table .price {
+    font-size: 3.5em;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    line-height: 1;
+}
+
+.pricing-table .condition {
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.pricing-table ol {
+    margin: 30px 0 40px 0;
+    font-size: 0.85em;
+}
+
+.pricing-table ol li {
+    margin: 2px 0;
+}
+
+
+.pricing-table.top-price .price {
+    color: #b6ded1;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 12. PROCESS
+/* --------------------------------------------------------------------- */
+
+.process {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 460px;
+    text-align: center;
+}
+
+.process:after {
+    display: block;
+    content: '';
+    width: 32%;
+    height: 25px;
+    position: absolute;
+    top: 40px;
+    left: 93%;
+    background: url(../images/layout/process-arrow.png) top left no-repeat;
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    -o-background-size: 100% auto;
+    background-size: 100% auto;
+}
+
+.process.last:after {
+    display: none;
+}
+
+.process .triangle {
+    margin-bottom: 15px;
+    color: #b6ded1;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 13. SERVICE
+/* --------------------------------------------------------------------- */
+
+.service {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 460px;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 14. COUNTER
+/* --------------------------------------------------------------------- */
+
+.counter {
+    text-align: center;
+}
+
+.counter li {
+    display: inline-block;
+    width: 20%;
+}
+
+.counter .triangle {
+    margin-bottom: 10px;
+    font-size: 1.6em;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 15. ACCORDION AND TOGGLE
+/* --------------------------------------------------------------------- */
+
+.accordion .title,
+.toggle .title {
+    display: block;
+    position: relative;
+    margin-bottom: 2px;
+    padding: 12px 20px;
+    background: #fff;
+    color: #3d3d3d;
+    font-weight: 400;
+    font-size: 0.9em;
+}
+
+.accordion .title:hover,
+.toggle .title:hover,
+.accordion .title.active,
+.toggle .title.active {
+    background: #b6ded1;
+}
+
+.accordion .title i,
+.toggle .title i {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+}
+
+.accordion .title .fa-minus,
+.toggle .title .fa-minus {
+    display: none;
+}
+
+.accordion .content,
+.toggle .content {
+    display: none;
+    margin-bottom: 2px;
+    padding: 25px 20px;
+    background: #fff;
+}
+
+.accordion p:last-child, .toggle p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 16. TABS
+/* --------------------------------------------------------------------- */
+
+/* ==== 16.1 TAB NAVI  ==== */
+
+.tab-navi li {
+    display: block;
+    float: left;
+}
+
+.tab-navi:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.tab-navi a {
+    display: block;
+    margin: 0 2px 2px 0;
+    padding: 15px 30px;
+    color: #3d4148;
+    font-size: 0.9em;
+    background: #fff;
+    border-top: 4px solid #fff;
+    text-transform: uppercase;
+    -webkit-transition: all 0s;
+    -moz-transition:    all 0s;
+    -o-transition:      all 0s;
+    transition:         all 0s;
+}
+
+.tab-navi a:hover {
+    border-color: #3d4148;
+}
+
+.tab-navi a.active {
+    border-color: #3d4148;
+    border-left: none;
+    padding: 15px 30px 25px 30px;
+    margin-bottom: -10px;
+}
+
+
+
+/* ==== 16.2 TAB CONTENT  ==== */
+
+.tab-content-container {
+    margin-bottom: 30px;
+    padding: 30px;
+    background: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.tab-content  p:last-child {
+    margin-bottom: 0;
+}
+
+.tab-content {
+    display: none;
+}
+
+
+
+/* --------------------------------------------------------------------- */
+/* 17. ALERT BOX
+/* --------------------------------------------------------------------- */
+
+.alert-box {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto 10px auto;
+    padding: 15px 50px 15px 20px;
+    text-align: left;
+    background: #fff;
+    border-left: 3px solid #fff;
+}
+
+.alert-box i {
+    width: 30px;
+}
+
+.alert-box .close {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    padding: 10px;
+    font-size: 1.2em;
+}
+.alert-box .close:hover {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+}
+
+.alert-box.error, .alert-box.error a {
+    color: #e76c6c;
+    border-color: #e76c6c;
+}
+
+.alert-box.warning, .alert-box.warning a {
+    color: #eae55e;
+    border-color: #eae55e;
+}
+
+.alert-box.success, .alert-box.success a {
+    color: #8cbd89;
+    border-color: #8cbd89;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 18. OWL CAROUSEL
+/* --------------------------------------------------------------------- */
+
+.owl-carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.owl-carousel {
+    cursor: url(../images/layout/carousel-cursor-dark.png) 4 4, move;
+}
+
+.grabbing {
+    cursor: url(../images/layout/carousel-cursor-dark.png) 4 4, move;
+}
+
+.white-grapper {
+    background: #3d4148;
+    cursor: url(../images/layout/carousel-cursor-light.png) 4 4, move;
+}
+
+.white-grapper .grabbing {
+    cursor: url(../images/layout/carousel-cursor-light.png) 4 4, move;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: #f0f1f1;
+    margin: 5px 5px;
+    filter: Alpha(Opacity=100);/*IE7 fix*/
+    opacity: 1;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+    background: #3d4148;
+}
+
+.owl-carousel.only-images .item:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.owl-carousel.only-images .item img {
+    float: left;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 19. CLIENT CAROUSEL
+/* --------------------------------------------------------------------- */
+
+.client-carousel {
+    padding: 0 40px;
+}
+
+.client-carousel .item {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.client-carousel .item img {
+    max-width: 100%;
+    -webkit-transition: all 0.3s;
+    -moz-transition:    all 0.3s;
+    -o-transition:      all 0.3s;
+    transition:         all 0.3s;
+    filter: none;
+    filter: gray;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+}
+
+.client-carousel .item:hover img {
+    filter: none;
+    -webkit-filter: grayscale(0%);
+    -moz-filter: grayscale(0%);
+    -ms-filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    -o-filter: grayscale(0%);
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* 20. COMMENT CAROUSEL
+/* --------------------------------------------------------------------- */
+
+.comment-carousel-container {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.comment-carousel-container .img-container {
+    position: relative;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.comment-carousel-container img {
+    float: left;
+    max-width: 100%;
+    height: auto;
+}
+
+.comment-carousel-container .img-container:after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+.comment-carousel-container .comment {
+    max-width: 820px;
+    padding: 0 25px 45px 25px;
+    margin: 0 auto 30px auto;
+    font-size: 1.2em;
+    background: url(../images/layout/arrow-devider.png) center bottom no-repeat;
+}
+
+.comment-carousel-container .name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.comment-carousel-container .owl-controls{
+    margin-top: 20px;
+}

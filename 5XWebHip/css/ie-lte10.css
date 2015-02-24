@@ -1,0 +1,51 @@
+
+/* --------------------------------------------------------------------- */
+/* BUTTON
+/* --------------------------------------------------------------------- */
+
+.button .bottom {
+    display: none;
+}
+
+.button .front:hover {
+    background: #3d4148;
+    color: #fff;
+}
+
+.button.white:hover .front {
+    background: #fff;
+    color: #3d4148;
+}
+
+.button.long:hover .front {
+    border-color: #3d4148;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* WORK
+/* --------------------------------------------------------------------- */
+
+.filter-tabs {
+    margin-bottom: 50px;
+}
+
+.filter-tabs li.active .button .front {
+    color: #fff;
+}
+
+
+
+
+/* --------------------------------------------------------------------- */
+/* OWL CAROUSEL
+/* --------------------------------------------------------------------- */
+
+.owl-carousel,
+.grabbing,
+.white-grapper,
+.white-grapper .grabbing {
+    cursor: move;
+}
