@@ -86,7 +86,7 @@ h3.undertitle,
 h4.undertitle,
 h5.undertitle,
 h6.undertitle {
-    margin-bottom: 60px;
+    margin-bottom: 0;
     font-family: 'Fenix', serif;
     font-weight: 400;
 }
