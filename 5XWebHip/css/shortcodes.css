@@ -741,7 +741,7 @@ a.triangle:hover {
 }
 
 .process:after {
-    display: block;
+    display: none;
     content: '';
     width: 32%;
     height: 25px;
