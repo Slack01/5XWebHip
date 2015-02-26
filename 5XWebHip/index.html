@@ -29,7 +29,9 @@
     <link rel="stylesheet" media="all" href="css/responsive.css" />
     <link rel="stylesheet" media="all" href="css/color.css" />
     <link rel="stylesheet" media="all" href="css/custom.css" />
-    <link rel="stylesheet" type="text/css" href="../css/vendor/css/feedget.min.css">
+<!--
+    <link rel="stylesheet" type="text/css" href="css/feedget.min.css">
+-->
 
     <!--[if lte IE 10]>
     <link rel="stylesheet" media="all" href="css/ie-lte10.css" />
@@ -58,7 +60,7 @@
                         facebook: false,
                         twitter: false,
                         reverse: false,
-                        loadingImg: '../images/loader.gif'
+                        loadingImg: 'images/loader.gif'
                     });
         });
     </script>
@@ -117,7 +119,7 @@
              data-start="transform: translateY(0px); opacity:1;"
              data-1000="transform: translateY(-100px); opacity:0;">
             <div class="item" style="background-image: url('images/banner/5xBackground.jpg');">
-                <div class="banner-content fadeIn" style="transform: translateY(20px); animation: fadeInTop 2s ease forwards;margin-top: -180px;">
+                <div class="banner-content fadeIn" id='fade1' style="transform: translateY(20px); animation: fadeInTop 2s ease forwards;margin-top: -180px;">
                     <h2>
                         <img src="images/banner/5xWebLogo.png" style="width: 165px !important;">
                     </h2>
@@ -125,7 +127,7 @@
                         Management Consulting <br />and Systems
                     </h2>
 
-                    <a href="#projects" class="button white scrollto">
+                    <a href="#projects" class="button white scrollto" style="margin-top: -50px">
                         <div class="front">
                             View Our Work
                         </div>
@@ -136,7 +138,7 @@
                 </div>
             </div>
             <div class="item" style="background-image: url('images/banner/solution.png');">
-                <div class="banner-content fadeIn" style="margin-top: -200px;">
+                <div class="banner-content fadeIn" id='fade2' style="margin-top: -200px;">
                     <h2 class="undertitle">
                         Complexity Simplified
                     </h2>
@@ -159,7 +161,7 @@
                 </div>
             </div>
             <div class="item" style="background-image: url('images/banner/industries1.png');">
-                <div class="banner-content fadeIn">
+                <div class="banner-content fadeIn" id='fade3'>
                     <h2>
                         Strategies
                     </h2>
@@ -722,7 +724,7 @@
 
 
         <!-- START NEWS GRID -->
-        <ul id="news-grid">
+        <ul id="news-grid" >
             <li>
                 <div class="date">
                     16.06.2014

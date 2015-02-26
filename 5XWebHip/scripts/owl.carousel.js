@@ -726,8 +726,6 @@ if (typeof Object.create !== "function") {
 
         play : function () {
 
-
-
             var base = this;
             base.apStatus = "play";
             if (base.options.autoPlay === false) {
@@ -800,15 +798,43 @@ if (typeof Object.create !== "function") {
                     base.isCssFinish = true;
 
                     var $top = $('body').scrollTop();
-                    var lastSlide = $('.owl-item').css('width');
-                    var lastNum = lastSlide.substring(0,4);
+                    var nextSlide = $('.owl-item').css('width');
+                    var nextNum = nextSlide.substring(0,4);
+                    nextNum = -nextNum;
+                    var lastSlide = nextNum*2;
 
                     if($top <= 800) {
                         var $yes = $('.owl-wrapper').css('left');
 
-
                         if ($yes == '0px') {
                             $('#logo').css('opacity', '0');
+                            $('#fade1').animate({
+                                opacity:1
+                            },400);
+                            $('#fade3').animate({
+                                opacity:0
+                            },400);
+                        }
+                        else if($yes == nextNum + 'px'){
+                            $('#logo').css('opacity', '1');
+                            $('#fade2').animate({
+                                opacity:1
+                            },400);
+                            $('#fade1').animate({
+                                opacity:0
+                            },400);
+                            $('#fade3').animate({
+                                opacity:0
+                            },400);
+                        }
+                        else if($yes == lastSlide + 'px'){
+                            $('#logo').css('opacity', '1');
+                            $('#fade3').animate({
+                                opacity:1
+                            },400);
+                            $('#fade2').animate({
+                                opacity:0
+                            },400);
                         }
                         else {
                             $('#logo').css('opacity', '1');
