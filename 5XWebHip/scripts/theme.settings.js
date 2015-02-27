@@ -26,7 +26,7 @@
     {
         bannerCarousel.owlCarousel({
             slideSpeed: 600,
-            paginationSpeed: 600,
+            paginationSpeed: 2000,
             navigation : true,
             pagination: false,
             singleItem: true,
