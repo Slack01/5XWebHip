@@ -739,6 +739,10 @@ a.triangle:hover {
     max-width: 460px;
     text-align: center;
 }
+.process img {
+    width: 100%;
+    margin-top: 10px;
+}
 
 .process:after {
     display: none;
