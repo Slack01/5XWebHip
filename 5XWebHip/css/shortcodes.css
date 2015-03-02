@@ -86,7 +86,7 @@ h3.undertitle,
 h4.undertitle,
 h5.undertitle,
 h6.undertitle {
-    margin-bottom: 60px;
+    margin-bottom: 0;
     font-family: 'Fenix', serif;
     font-weight: 400;
 }
@@ -96,18 +96,28 @@ h2.underline,
 h3.underline,
 h4.underline {
     display: block;
-    margin-bottom: 15px;
     padding-bottom: 20px;
     background: url(../images/layout/headline-decoration.png) center bottom no-repeat;
 }
 
 h1.margin-bottom,
 h2.margin-bottom,
-h3.margin-bottom {
+h3.margin-bottom,
+h4.margin-bottom
+ {
     margin-bottom: 60px;
 }
 
 
+h1.underline,
+h2.underline,
+h3.underline {
+    margin-bottom: 0;
+}
+
+h4.underline {
+    margin-bottom: 60px;
+}
 
 /* ============ 1.2 PARAGRAPHS ============  */
 
@@ -566,7 +576,7 @@ input.submit.dark:hover {
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    background-image: url(../images/layout/triangle.svg);
+    background-image: url(../images/layout/triangle.png);
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -583,7 +593,7 @@ a.triangle:hover {
 
 .triangle.white {
     color: #3d4148;
-    background-image: url(../images/layout/triangle-white.svg);
+    background-image: url(../images/layout/triangle-white.png);
 }
 
 
@@ -728,6 +738,10 @@ a.triangle:hover {
     margin-right: auto;
     max-width: 460px;
     text-align: center;
+}
+.process img {
+    width: 100%;
+    margin-top: 10px;
 }
 
 .process:after {

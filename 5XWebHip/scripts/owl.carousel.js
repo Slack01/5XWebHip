@@ -802,8 +802,9 @@ if (typeof Object.create !== "function") {
                     var nextNum = nextSlide.substring(0,4);
                     nextNum = -nextNum;
                     var lastSlide = nextNum*2;
+                    var winHeight = $(window).height();
 
-                    if($top <= 800) {
+                    if($top <= winHeight) {
                         var $yes = $('.owl-wrapper').css('left');
 
                         if ($yes == '0px') {
@@ -838,10 +839,20 @@ if (typeof Object.create !== "function") {
                         }
                         else {
                             $('#logo').css('opacity', '1');
+                            $('#fade1').animate({
+                                opacity:1
+                            },400);
+                            $('#fade2').animate({
+                                opacity:1
+                            },400);
+                            $('#fade3').animate({
+                                opacity:1
+                            },400);
                         }
                     }
                     else {
                         $('#logo').css('opacity', '1');
+
                     }
 
 
