@@ -153,6 +153,12 @@
         -webkit-transform: rotateX(0) translateZ(99px);
         transform: rotateX(0) translateZ(99px);
     }
+    #logo img {
+        max-width: 100px;
+    }
+    #mobile-bars {
+        min-height: 30px !important;
+    }
 
     #main-navigation {
         left: 0;
