@@ -576,7 +576,7 @@ input.submit.dark:hover {
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    background-image: url(../images/layout/triangle.svg);
+    background-image: url(../images/layout/triangle.png);
     -webkit-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
     -o-background-size: 100% 100%;
@@ -593,7 +593,7 @@ a.triangle:hover {
 
 .triangle.white {
     color: #3d4148;
-    background-image: url(../images/layout/triangle-white.svg);
+    background-image: url(../images/layout/triangle-white.png);
 }
 
 
