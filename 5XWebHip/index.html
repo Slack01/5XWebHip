@@ -5,9 +5,9 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>5X Solutions, Inc</title>
-    <meta name="description" content="template by artless" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <meta name="author" content="artless" />
+    <meta name="description" content="template by artless"/>
+    <meta name="keywords" content="HTML, CSS, JavaScript"/>
+    <meta name="author" content="artless"/>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
 
     <!-- GOOGLE FONT STYLESHEETS -->
@@ -29,9 +29,9 @@
     <link rel="stylesheet" media="all" href="css/responsive.css" />
     <link rel="stylesheet" media="all" href="css/color.css" />
     <link rel="stylesheet" media="all" href="css/custom.css" />
-
+<!--
     <link rel="stylesheet" type="text/css" href="css/feedget.min.css">
-
+-->
 
     <!--[if lte IE 10]>
     <link rel="stylesheet" media="all" href="css/ie-lte10.css" />
@@ -39,6 +39,7 @@
     <!--[if lte IE 8]>
     <link rel="stylesheet" media="all" href="css/ie-lte8.css" />
     <![endif]-->
+
     <!-- JAVASCRIPT PLUGINS -->
     <script type="text/javascript" src="scripts/jquery.1.11.1.min.js"></script>
     <script type="text/javascript" src="scripts/modernizr.custom.97074.js"></script>
@@ -47,17 +48,17 @@
     <script type="text/javascript" src="scripts/blogFeed/feedget-1.1.2.min.js"></script>
     <script type="text/javascript" src="scripts/blogFeed/jquery-ui.js"></script>
 
-    <script type="text/javascript">
+    <script>
         $(function () {
             $('.blogDiv').feedget(
                     {
-                        feed: 'http://blog.5xsolutions.com/Blog/syndication.axd',
+                        feed: 'http://base11blog.azurewebsites.net/?feed=rss2',
                         direction: 'horizontal',
                         entries: 3,
                         images: true,
-                        buttons: true,
-                        facebook: true,
-                        twitter: true,
+                        buttons: false,
+                        facebook: false,
+                        twitter: false,
                         reverse: false,
                         loadingImg: 'images/loader.gif'
                     });
@@ -68,930 +69,968 @@
 
 
 
-    <!-- START PAGE PRELOADER -->
-    <div id="page-preloader">
-        <div class="preloader-content">
-            <img class="logo" src="images/layout/5xWebLogo.png" alt="5X Solutions" />
-            <img src="images/layout/preloader.gif" alt="Load ..." />
-        </div>
-    </div><!-- END PAGE PRELOADER -->
-    <!-- START PAGE WRAPPER -->
-    <div id="page-wrapper">
-        <!-- START LOGO -->
-        <a id="logo" class="scrollto" href="#banner">
-            <img class="light" src="images/layout/5xWebLogo.png" alt="5X Solutions" />
-            <img class="dark" src="images/layout/5xWebLogo.png" alt="5X Solutions" />
-        </a><!-- END LOGO -->
+<!-- START PAGE PRELOADER -->
+<div id="page-preloader">
+    <div class="preloader-content">
+        <img class="logo" src="images/layout/5xWebLogo.png" alt="5X Solutions" />
+        <img src="images/layout/preloader.gif" alt="Load ..." />
+    </div>
+</div><!-- END PAGE PRELOADER -->
 
-        <a id="mobile-bars" class="banner">
-            <i class="fa fa-bars"></i>
-        </a>
 
-        <nav id="page-header">
-            <!-- START MAIN NAVIGATION -->
-            <ul id="main-navigation">
-                <li><a href="#about">About</a></li>
-                <li><a href="#leadership">Team</a></li>
-                <li><a href="#clients">Clients</a></li>
-                <li><a href="#skills">Industry Expertise</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#news">Publications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul><!-- END MAIN NAVIGATION -->
 
-            <a id="mobile-close" class="close-button">Close Navigation</a>
-        </nav>
+<!-- START PAGE WRAPPER -->
+<div id="page-wrapper">
+    <!-- START LOGO -->
+    <a id="logo" class="scrollto" href="#banner">
+        <img class="light" src="images/layout/5xWebLogo.png" alt="5X Solutions" />
+        <img class="dark" src="images/layout/5xWebLogo.png" alt="5X Solutions" />
+    </a><!-- END LOGO -->
 
-        <!-- START BANNER SECTION -->
-        <section id="banner" class="banner brad-slider-holder parallax-slider-yes header-slider-yes skrollable skrollable-between"
-                 style="-webkit-transform: translateY(0px); height: 818px;"
-                 data-start="transform: translateY(0px);"
-                 data-1440="transform: translateY(-250px);
+    <a id="mobile-bars" class="banner">
+        <i class="fa fa-bars"></i>
+    </a>
+
+    <nav id="page-header">
+        <!-- START MAIN NAVIGATION -->
+        <ul id="main-navigation">
+            <li><a href="#about">About</a></li>
+            <li><a href="#leadership">Team</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul><!-- END MAIN NAVIGATION -->
+
+        <a id="mobile-close" class="close-button">close Navigation</a>
+    </nav>
+
+    <!-- START BANNER SECTION -->
+    <section id="banner" class="banner brad-slider-holder parallax-slider-yes header-slider-yes skrollable skrollable-between"
+             style="-webkit-transform: translateY(0px); height: 818px;"
+             data-start="transform: translateY(0px);"
+             data-1440="transform: translateY(-250px);
              ">
 
-            <!-- START BANNER CAROUSEL -->
-            <div class="owl-carousel banner-carousel white-grapper skrollable skrollable-between"
-                 style="width: auto; -webkit-transform: translateY(0px); opacity: 1;"
-                 data-start="transform: translateY(0px); opacity:1;"
-                 data-1000="transform: translateY(-100px); opacity:0;">
-                <div class="item" style="background-image: url('images/banner/5xBackground.jpg');">
-                    <div class="banner-content fadeIn" id='fade1' style="transform: translateY(20px); animation: fadeInTop 2.5s ease forwards;margin-top: -180px;">
-                        <h2>
-                            <img src="images/banner/5xWebLogoLrg.png" style="width: 165px !important;">
-                        </h2>
-                        <h2>
-                            Business consulting
-                        </h2>
-                        <h4 class="undertitle margin-bottom">
-<<<<<<< HEAD
-                            measure, manage, and scale your business
-=======
-<<<<<<< HEAD
-                            measure, manage, and scale your business
-=======
-                            measure, manage, & scale your business
->>>>>>> 5X
->>>>>>> master
-                        </h4>
+        <!-- START BANNER CAROUSEL -->
+        <div class="owl-carousel banner-carousel white-grapper skrollable skrollable-between"
+             style="width: auto; -webkit-transform: translateY(0px); opacity: 1;"
+             data-start="transform: translateY(0px); opacity:1;"
+             data-1000="transform: translateY(-100px); opacity:0;">
+            <div class="item" style="background-image: url('images/banner/5xBackground.jpg');">
+                <div class="banner-content fadeIn" id='fade1' style="transform: translateY(20px); animation: fadeInTop 2s ease forwards;margin-top: -180px;">
+                    <h2>
+                        <img src="images/banner/5xWebLogoLrg.png" style="width: 165px !important;">
+                    </h2>
+                    <h2 class ="undertitle">
+                        Complexity Simplified
+                    </h2>
+                    <h4 class="undertitle margin-bottom">
+                        management consulting & systems to scale your business
+                    </h4>
 
-                        <a href="#projects" class="button white scrollto" style="margin-top: -50px">
-                            <div class="front">
-                                View Our Work
-                            </div>
-                            <div class="bottom">
-                                View Our Work
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url('images/banner/solution.png');">
-                    <div class="banner-content fadeIn" id='fade2' style="margin-top: -100px;">
-                        <h2 class="undertitle">
-                            Complexity Simplified
-                        </h2>
-                        <h4 class="undertitle margin-bottom">
-                            <ul>
-                                <li>Measurable</li>
-                                <li>Manageable</li>
-                                <li>Efficient</li>
-                                <li>Scalable</li>
-                            </ul>
-                        </h4>
-                        <a href="#projects" class="button white scrollto">
-                            <div class="front">
-                                View Our Work
-                            </div>
-                            <div class="bottom">
-                                View Our Work
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="item" style="background-image: url('images/banner/industries1.png');">
-                    <div class="banner-content fadeIn" id='fade3'>
-                        <h2>
-                            Strategies
-                        </h2>
-                        <h4 class="undertitle margin-bottom">
-                            That can scale your business or cut costs
-                        </h4>
-                        <a href="#skills" class="button white scrollto">
-                            <div class="front">
-                                Industry Expertise
-                            </div>
-                            <div class="bottom">
-                                Industry Expertise
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div><!-- END BANNER CAROUSEL -->
-        </section><!-- END BANNER SECTION -->
-        <!-- START ABOUT SECTION -->
-        <section id="about">
-            <div class="row center">
-                <h1 class="underline">What We Do</h1>
-                <h4 class="undertitle">Complexity Simplified</h4>
-            </div>
-
-            <div class="row center">
-                <p class="text-block">
-                    We improve process and systems resulting in improvements that are measurable, manageable, efficient, and scalable. 5X Solutions offer custom business management systems that optimize and scale your operations. We provide expert analysis with our knowledge of cutting edge technology to simplify the complexity of your business. In doing so, we identify opportunities, and provide solutions that improve your business.
-                </p>
-                <p class="text-block quote">
-<<<<<<< HEAD
-                    <img src="images/comments/quoteMark.png" />
-=======
-                    <img src="/images/comments/quoteMark.png" />
->>>>>>> master
-                    <em>"5x is really good at understanding, reducing, and simplifying complex business problems"</em>
-                </p>
-                <a class="button scrollto" href="#clients">
-                    <div class="front">
-                        View Our Clients
-                    </div>
-                    <div class="bottom">
-                        View Our Clients
-                    </div>
-                </a>
-            </div>
-        </section><!-- END ABOUT SECTION -->
-        <!-- START PARALLAX SECTION -->
-        <section class="parallax">
-            <div class="row center">
-                <h2>Our Process</h2>
-                <h5 class="undertitle">How We Bring Your Idea to Market</h5>
-            </div>
-            <div class="row gutters">
-                <div class="col span_12">
-                    <!-- START PROCESS -->
-                    <div class="process">
-                        <img src="images/about/5xProcess.png" style="margin-top: 20px; margin-bottom: 0" />
-                    </div>
-                </div>
-            </div>
-            <div class="row gutters">
-                <div class="col span_4">
-                    <!-- START PROCESS -->
-                    <div class="process">
-                        <div class="triangle big">
-                            1
-                        </div>
-                        <h4>Identify Problem</h4>
-                        <p>
-                            We research and find the best way to build your idea. We plan a comprehensive approach will help define the problem, viability of the solution, and cost benefit for stakeholders. Next is the design process: simple, elegant solutions that are easy to use and easy to maintain is our focus. When it comes time to develop, our expert development team can deliver a high quality product, on time, with excellent results.
-                        </p>
-                    </div><!-- END PROCESS -->
-                </div>
-                <div class="col span_4">
-                    <!-- START PROCESS -->
-                    <div class="process">
-                        <div class="triangle big">
-                            2
-                        </div>
-                        <h4>Craft Solutions</h4>
-                        <p>
-                            Because execution is so crucial, we put a lot of effort and careful consideration into our approach. A complete deployment strategy insures your launch will be a success. This is what makes 5X Solutions different from it's competitors, the thought and care of your idea after the initial development process.
-                        </p><!-- END PROCESS -->
-                    </div>
-                </div>
-                <div class="col span_4">
-                    <!-- START PROCESS LAST -->
-                    <div class="process last">
-                        <div class="triangle big">
-                            3
-                        </div>
-                        <h4>Implement</h4>
-                        <p>
-                            At 5X Solutions, we want your idea to succeed. That's why we want to ensure that after it is launched, your product stays successful and your vision is achieved. Our post production management and maintenance strategies will enhance the usability and life of the product.
-                        </p>
-                    </div><!-- END PROCESS LAST -->
-                </div>
-            </div>
-        </section><!-- END PARALLAX SECTION -->
-        <!-- START TEAM SECTION -->
-        <section id="leadership">
-            <div class="row center">
-                <h2>The 5X Team</h2>
-                <h5 class="undertitle">We Have Worked on Hundreds of Projects Together Over the Past 15 Years</h5>
-            </div>
-
-            <div class="row gutters">
-                <div class="col span_4">
-                    <!-- START TEAM MEMBER -->
-                    <div class="team-member">
-                        <div class="img-container">
-                            <div class="layer">
-                                <div class="text">
-                                    <h4>Ron de Frates</h4>
-                                    <span class="undertitle">Co-Founder</span>
-                                </div>
-                            </div>
-                            <img src="images/team/RondeFrates.png" alt="Ron de Frates" />
-                        </div>
-
-                        <a class="triangle">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a class="triangle">
-                            <i class="fa fa-envelope"></i>
-                        </a>
-                        <a class="triangle">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </div><!-- END TEAM MEMBER -->
-                </div>
-
-                <div class="col span_4">
-                    <!-- START TEAM MEMBER -->
-                    <div class="team-member">
-                        <div class="img-container">
-                            <div class="layer">
-                                <div class="text">
-                                    <h4>Mandy Meadows</h4>
-                                    <span class="undertitle">Associate</span>
-                                </div>
-                            </div>
-                            <img src="images/team/MandyMeadows.png" alt="Mandy Meadows" />
-                        </div>
-
-                        <a class="triangle">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a class="triangle">
-                            <i class="fa fa-envelope"></i>
-                        </a>
-                        <a class="triangle">
-                            <i class="fa fa-facebook"></i>
-                        </a>
-                    </div><!-- END TEAM MEMBER -->
-                </div>
-
-                <div class="col span_4">
-                    <!-- START TEAM MEMBER -->
-                    <div class="team-member">
-                        <div class="img-container">
-                            <div class="layer">
-                                <div class="text">
-                                    <h4>John D. Beneventi</h4>
-                                    <span class="undertitle">Co-Founder</span>
-                                </div>
-                            </div>
-                            <img src="images/team/JohnDBeneventi.png" alt="John D. Beneventi" />
-                        </div>
-
-                        <a class="triangle">
-                            <i class="fa fa-twitter"></i>
-                        </a>
-                        <a class="triangle">
-                            <i class="fa fa-envelope"></i>
-                        </a>
-                        <a class="triangle">
-                            <i class="fa fa fa-linkedin"></i>
-                        </a>
-                    </div><!-- END TEAM MEMBER -->
-                </div>
-            </div>
-        </section><!-- END TEAM SECTION -->
-        <!-- START PARALLAX SECTION -->
-        <section class="parallax" id="clients">
-            <div class="row center">
-                <h2>Our Fantastic Clients</h2>
-                <h5 class="undertitle">Organizations the founders have worked with:</h5>
-            </div>
-
-            <!-- START CLIENT CAROUSEL -->
-            <div class="client-carousel owl-carousel">
-                <div class="item"><img src="images/clients/FannieMae.png" alt="" /></div>
-                <div class="item"><img src="images/clients/freddiemac.png" alt="" /></div>
-                <div class="item"><img src="images/clients/quicken.png" alt="" /></div>
-                <div class="item"><img src="images/clients/base11.png" alt="" /></div>
-                <div class="item"><img src="images/clients/vivamazing.png" alt="" /></div>
-                <div class="item"><img src="images/clients/verifymyrent.png" alt="" /></div>
-                <div class="item"><img src="images/clients/neighborworks.png" alt="" /></div>
-                <div class="item"><img src="images/clients/philadelphia.png" alt="" /></div>
-                <div class="item"><img src="images/clients/inhp.png" alt="" /></div>
-                <div class="item"><img src="images/clients/minnesota.png" alt="" /></div>
-                <div class="item"><img src="images/clients/hpn.png" alt="" /></div>
-                <div class="item"><img src="images/clients/nahrep.png" alt="" /></div>
-                <div class="item"><img src="images/clients/hud.png" alt="" /></div>
-                <div class="item"><img src="images/clients/NCST.gif" alt="" /></div>
-                <div class="item"><img src="images/clients/venta.png" alt="" /></div>
-                <div class="item"><img src="images/clients/espanol.png" alt="" /></div>
-            </div><!-- END CLIENT CAROUSEL -->
-        </section><!-- END PARALLAX SECTION -->
-        <!-- START clients SECTION -->
-        <section id="" class="arrow">
-            <div class="row center">
-                <h1 class="underline">Clients</h1>
-                <h4 class="undertitle">Organizations the founders have worked with</h4>
-            </div>
-
-            <div class="row">
-                <p class="text-block">
-                    We very proud of all of our clients and their successes. We believe it says something about a business to care for it's clients; that's why we ensure the satisfaction of all of those we work with. Working closely with our clients and using clear communication has resulted in the success of their ideas.
-                </p>
-            </div>
-
-        </section><!-- END clients SECTION -->
-        <!-- START PARALLAX SECTION -->
-        <section class="parallax">
-            <div class="row center">
-                <h2>What Our Clients Say</h2>
-                <h5 class="undertitle">We Are Happy About Every Review</h5>
-            </div>
-
-            <!-- START COMMENT CAROUSEL -->
-            <div class="comment-carousel-container">
-                <div class="owl-carousel comment-carousel">
-                    <div class="item">
-                        <div class="img-container">
-                            <img src="images/comments/testimonial.png" alt="" />
-                        </div>
-                        <div class="comment">
-                            "5x is really good at understanding, reducing, and simplifying complex business problems. All communication was very clear and professional. They helped my idea reach it's full potential"
-                        </div>
-                        <span class="name">
-                            John Smith, Freddie Mac
-                        </span>
-                    </div>
-                    <div class="item">
-                        <div class="img-container">
-                            <img src="images/comments/testimonial.png" alt="" />
-                        </div>
-                        <div class="comment">
-                            "5x is really good at understanding, reducing, and simplifying complex business problems. All communication was very clear and professional. They helped my idea reach it's full potential"
-                        </div>
-                        <span class="name">
-                            John Smith, Freddie Mac
-                        </span>
-                    </div>
-                    <div class="item">
-                        <div class="img-container">
-                            <img src="images/comments/testimonial.png" alt="" />
-                        </div>
-                        <div class="comment">
-                            "5x is really good at understanding, reducing, and simplifying complex business problems. All communication was very clear and professional. They helped my idea reach it's full potential"
-                        </div>
-                        <span class="name">
-                            John Smith, Freddie Mac
-                        </span>
-                    </div>
-                </div>
-            </div><!-- END COMMENT CAROUSEL -->
-        </section><!-- END PARALLAX SECTION -->
-        <!-- START SKILLS SECTION -->
-        <section id="skills" class="arrow">
-            <div class="row center">
-                <h1 class="underline">Our Skills</h1>
-                <h4 class="undertitle">What We Bring To the Table</h4>
-            </div>
-
-            <div class="row gutters">
-                <div class="col span_3">
-                    <div class="service">
-                        <div class="icon">
-                            <i class="fa fa-usd"></i>
-                        </div>
-                        <h4>Finance</h4>
-                        <p>
-                            We have financial professionals working with us to minimize costs and maximize revenue.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col span_3">
-                    <div class="service">
-                        <div class="icon">
-                            <i class="fa fa-tablet"></i>
-                        </div>
-                        <h4>Technology</h4>
-                        <p>
-                            We work with the most up to date to technology because the modern business needs it to have the competitive edge.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col span_3">
-                    <div class="service">
-                        <div class="icon">
-                            <i class="fa fa-pie-chart"></i>
-                        </div>
-                        <h4>Marketing</h4>
-                        <p>
-                            We have been established for 16 years, and over that time we have built connections and extended our reach to give your idea the exposure needed.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col span_3">
-                    <div class="service">
-                        <div class="icon">
-                            <i class="fa fa-sitemap"></i>
-                        </div>
-                        <h4>Process Analysis</h4>
-                        <p>
-                            We believe attention to detail is extremely important. We analyze the execution of nearly every aspect to increase efficiency of the business.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row gutters">
-                <div class="col span_3">
-                    <div class="service">
-                        <div class="icon">
-                            <i class="fa fa-code"></i>
-                        </div>
-                        <h4>Web / App Development</h4>
-                        <p>
-                            We utilize professional developers to give your idea beautiful aesthetic and incredible functionality.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col span_3">
-                    <div class="service">
-                        <div class="icon">
-                            <i class="fa fa-sort-numeric-desc"></i>
-                        </div>
-                        <h4>Data Collection and Analysis</h4>
-                        <p>
-                            Our team knows how to interpret data collected and turn that into improving the product or business model
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col span_3">
-                    <div class="service">
-                        <div class="icon">
-                            <i class="fa fa-users"></i>
-                        </div>
-                        <h4>Branding and Consumer Research</h4>
-                        <p>
-                            We want your idea to succeed, that's why we work to establish your business as a serious competitor in your market.
-                        </p>
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- END SKILLS SECTION -->
-        <!-- START PARALLAX SECTION -->
-        <section class="parallax image" style="color:#40434A;">
-            <div class="row center">
-                <h2>Facts About Us</h2>
-                <h5 class="undertitle">Numbers Don't Lie</h5>
-            </div>
-
-            <div class="row">
-                <!-- START COUNTER -->
-                <ul class="counter">
-                    <li>
-                        <div class="triangle big white">
-                            <span class="number">65</span>
-                        </div>
-                        <h5>Utilizing our skills</h5>
-                    </li>
-                    <li>
-                        <div class="triangle big white">
-                            <span class="number">63</span>
-                        </div>
-                        <h5>Happy Clients</h5>
-                    </li>
-                    <li>
-                        <div class="triangle big white">
-                            <span class="number">68</span>
-                        </div>
-                        <h5>Finished Projects</h5>
-                    </li>
-                    <li>
-                        <div class="triangle big white">
-                            <span class="number">55</span>
-                        </div>
-                        <h5>Product Successes</h5>
-                    </li>
-                </ul><!-- END COUNTER -->
-            </div>
-        </section><!-- END PARALLAX SECTION -->
-        <!-- START WORK SECTION -->
-        <section class="arrow" id="projects">
-            <div class="row center">
-                <h1 class="underline">Selected Projects</h1>
-                <h4 class="undertitle">What We've Done / What We are Working On</h4>
-            </div>
-
-            <div class="row">
-                <p class="text-block">
-                    The principles of 5X Solutions have worked together for over 16 years. Click on the types of projects below to learn more about examples of their important works together.
-                </p>
-            </div>
-
-            <!-- START FILTER TABS -->
-            <ul id="work-filter" style="display: none" class="filter-tabs">
-                <li class="work-filter active" data-filter="all">
-                    <a class="button">
+                    <a href="#projects" class="button white scrollto" style="margin-top: -50px">
                         <div class="front">
-                            All
+                            View Our Work
                         </div>
                         <div class="bottom">
-                            All
+                            View Our Work
                         </div>
                     </a>
-                </li>
-
-                <li class="work-filter" data-filter=".frontend">
-                    <a class="button">
-                        <div class="front">
-                            Webdesign
-                        </div>
-                        <div class="bottom">
-                            Webdesign
-                        </div>
-                    </a>
-                </li>
-
-                <li class="work-filter" data-filter=".backend">
-                    <a class="button">
-                        <div class="front">
-                            Wordpress
-                        </div>
-                        <div class="bottom">
-                            Wordpress
-                        </div>
-                    </a>
-                </li>
-            </ul><!-- END FILTER TABS -->
-            <!-- START WORK GRID -->
-            <ul id="work-grid">
-                <li class="work-mix frontend">
-                    <a data-work-link="work-01.html">
-                        <div class="layer">
-                            <div class="text">
-                                <h3>All</h3>
-                                <span class="undertitle">Click To See More Details</span>
-                            </div>
-                        </div>
-                        <img src="images/work/all.png" alt="" />
-                    </a>
-                </li>
-
-                <li class="work-mix backend">
-                    <a data-work-link="work-05.html">
-                        <div class="layer">
-                            <div class="text">
-                                <h3>Digital Marketing</h3>
-                                <span class="undertitle">Click To See More Details</span>
-                            </div>
-                        </div>
-                        <img src="images/work/marketing.jpg" alt="" />
-                    </a>
-                </li>
-
-                <li class="work-mix frontend">
-                    <a data-work-link="work-03.html">
-                        <div class="layer">
-                            <div class="text">
-                                <h3>Metrics & Measurement</h3>
-                                <span class="undertitle">Click To See More Details</span>
-                            </div>
-                        </div>
-                        <img src="images/work/measure.png" alt="" />
-                    </a>
-                </li>
-
-                <li class="work-mix backend">
-                    <a data-work-link="work-04.html">
-                        <div class="layer">
-                            <div class="text">
-                                <h3>Scalability/Efficiency</h3>
-                                <span class="undertitle">Click To See More Details</span>
-                            </div>
-                        </div>
-                        <img src="images/work/scale.png" alt="" />
-                    </a>
-                </li>
-
-                <li class="work-mix backend">
-                    <a data-work-link="work-02.html">
-                        <div class="layer">
-                            <div class="text">
-                                <h3>Management Systems</h3>
-                                <span class="undertitle">Click To See More Details</span>
-                            </div>
-                        </div>
-                        <img src="images/work/manager.jpeg" alt="" />
-                    </a>
-                </li>
-
-                <li class="work-mix frontend">
-                    <a data-work-link="work-06.html">
-                        <div class="layer">
-                            <div class="text">
-                                <h3>Technology Integration</h3>
-                                <span class="undertitle">Click To See More Details</span>
-                            </div>
-                        </div>
-                        <img src="images/work/tech.jpg" alt="" />
-                    </a>
-                </li>
-            </ul><!-- END WORK GRID -->
-
-        </section><!-- END WORK SECTION -->
-        <!-- START NEWS SECTION -->
-        <section id="news" class="arrow">
-            <div class="row center">
-                <h1 class="underline">Publications</h1>
-                <h4 class="undertitle">More Then Just A Blog</h4>
-            </div>
-
-            <div class="row">
-                <div class="blogDiv feedget-container horizontal ui-widget col-md-9"
-                     style=" float: none; text-align: center; overflow: hidden; position: relative;" id="feedget0">
                 </div>
             </div>
+            <div class="item" style="background-image: url('images/banner/solution.png');">
+                <div class="banner-content fadeIn" id='fade2' style="margin-top: -100px;">
+                    <h2 class="undertitle">
+                        Complexity Simplified
+                    </h2>
+                    <h4 class="undertitle margin-bottom">
+                        <ul>
+                            <li>Measurable</li>
+                            <li>Manageable</li>
+                            <li>Efficient</li>
+                            <li>Scalable</li>
+                        </ul>
+                    </h4>
+                    <a href="#projects" class="button white scrollto">
+                        <div class="front">
+                            View Our Work
+                        </div>
+                        <div class="bottom">
+                            View Our Work
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url('images/banner/industries1.png');">
+                <div class="banner-content fadeIn" id='fade3'>
+                    <h2>
+                        Strategies
+                    </h2>
+                    <h4 class="undertitle margin-bottom">
+                        That can scale your business or cut costs
+                    </h4>
+                    <a href="#skills" class="button white scrollto">
+                        <div class="front">
+                            View Our Skills
+                        </div>
+                        <div class="bottom">
+                            View Our Skills
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div><!-- END BANNER CAROUSEL -->
+    </section><!-- END BANNER SECTION -->
 
-            <!-- START NEWS GRID -->
-            <ul id="news-grid">
-                <li>
-                    <div class="date">
-                        16.06.2014
-                    </div>
 
-                    <div class="img-container">
-                        <a data-news-link="news-01.html" class="layer">
-                            <div class="text">
-                                <span class="comments">4 Comments</span>
-                                <span class="undertitle">More Details</span>
-                            </div>
-                        </a>
-                        <img src="images/news/thumbnail-01.jpg" alt="" />
-                    </div>
+    <!-- START ABOUT SECTION -->
+    <section id="about">
+        <div class="row center">
+            <h1 class="underline">What We Do</h1>
+            <h4 class="undertitle">Lead with Knowledge</h4>
+        </div>
 
-                    <h3>Post With Video</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis commodo ligula eget parturient montes, nascetur ridiculus mus. Donec natoque penatibus et magnis dis commodo quam felis, ultricies nec, pellentesque eu. Donec natoque penatibus et magnis.
-                    </p>
-
-                    <a data-news-link="news-01.html" class="read-more">read more</a>
-                </li>
-
-                <li>
-                    <div class="date">
-                        02.06.2014
-                    </div>
-
-                    <div class="img-container">
-                        <a data-news-link="news-02.html" class="layer">
-                            <div class="text">
-                                <span class="comments">2 Comments</span>
-                                <span class="undertitle">More Details</span>
-                            </div>
-                        </a>
-                        <img src="images/news/thumbnail-02.jpg" alt="" />
-                    </div>
-
-                    <h3>On The Road</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
-                    </p>
-
-                    <a data-news-link="news-02.html" class="read-more">read more</a>
-                </li>
-
-                <li>
-                    <div class="date">
-                        22.05.2014
-                    </div>
-
-                    <div class="img-container">
-                        <a data-news-link="news-03.html" class="layer">
-                            <div class="text">
-                                <span class="comments">3 Comments</span>
-                                <span class="undertitle">More Details</span>
-                            </div>
-                        </a>
-                        <img src="images/news/thumbnail-03.jpg" alt="" />
-                    </div>
-
-                    <h3>The Big City</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu pretium.
-                    </p>
-
-                    <a data-news-link="news-03.html" class="read-more">read more</a>
-                </li>
-
-                <li>
-                    <div class="date">
-                        07.05.2014
-                    </div>
-
-                    <div class="img-container">
-                        <a data-news-link="news-04.html" class="layer">
-                            <div class="text">
-                                <span class="comments">8 Comments</span>
-                                <span class="undertitle">More Details</span>
-                            </div>
-                        </a>
-                        <img src="images/news/thumbnail-04.jpg" alt="" />
-                    </div>
-
-                    <h3>Coffee And Cakes</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
-                    </p>
-
-                    <a data-news-link="news-04.html" class="read-more">read more</a>
-                </li>
-
-                <li>
-                    <div class="date">
-                        28.04.2014
-                    </div>
-
-                    <div class="img-container">
-                        <a data-news-link="news-05.html" class="layer">
-                            <div class="text">
-                                <span class="comments">3 Comments</span>
-                                <span class="undertitle">More Details</span>
-                            </div>
-                        </a>
-                        <img src="images/news/thumbnail-05.jpg" alt="" />
-                    </div>
-
-                    <h3>One Day In Paris</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.
-                    </p>
-
-                    <a data-news-link="news-05.html" class="read-more">read more</a>
-                </li>
-
-                <li>
-                    <div class="date">
-                        17.04.2014
-                    </div>
-
-                    <div class="img-container">
-                        <a data-news-link="news-06.html" class="layer">
-                            <div class="text">
-                                <span class="comments">6 Comments</span>
-                                <span class="undertitle">More Details</span>
-                            </div>
-                        </a>
-                        <img src="images/news/thumbnail-06.jpg" alt="" />
-                    </div>
-
-                    <h3>A Beautiful Sunset</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis commodo ligula eget parturient montes, nascetur ridiculus mus. Donec natoque penatibus et magnis dis commodo quam felis, ultricies nec pellentesque
-                    </p>
-
-                    <a data-news-link="news-06.html" class="read-more">read more</a>
-                </li>
-            </ul>
-            <!-- END NEWS GRID -->
-            <!-- START NEWS LOAD MORE -->
-            <a class="button long" id="load-more-news">
+        <div class="row center">
+            <p class="text-block">
+                We offer custom business management systems that optimize and scale your operations. We provide expert analysis with our knowledge of cutting edge technology to simplify the complexity of your business. In doing so, we identify opportunities, and provide solutions that improve your business.
+            </p>
+            <p class="text-block"><i>"5x is really good at understanding, reducing, and simplifying complex business problems"</i></p>
+            <a class="button scrollto" href="#clients">
                 <div class="front">
-                    Load More
+                    View Our Clients
                 </div>
                 <div class="bottom">
-                    Load More
-                </div>
-            </a><!-- END NEWS LOAD MORE -->
-        </section><!-- END NEWS SECTION -->
-        <!-- START DEVIDER -->
-        <div class="devider"></div><!-- END DEVIDER -->
-        <!-- START CONTACT SECTION -->
-        <section id="contact" class="arrow">
-            <div class="row center">
-                <h1 class="underline">Contact</h1>
-                <h4 class="undertitle">We Are Ready For Your Project</h4>
-            </div>
-
-            <div class="row">
-                <p class="text-block">
-                    We would love to do business with you. Make a decision you won't regret and contact us now.
-                </p>
-            </div>
-
-            <!-- START CONTACT DETAILS -->
-            <div class="row contact-details">
-                <div class="adress">
-                    5X Solutions
-                    <br>
-                    P.O. Box 8018
-                    <br>
-                    Rancho Santa Fe,
-                    CA 92067
-                </div>
-                <div class="phone">
-                    +1 (858) 759-7028
-                </div>
-
-                <a class="button big">
-                    <div class="front">
-                        support@youradress.com
-                    </div>
-                    <div class="bottom">
-                        support@youradress.com
-                    </div>
-                </a>
-            </div><!-- END CONTACT DETAILS -->
-            <!-- START GOOGLE MAP -->
-            <div id="googlemap" style="display: none"></div><!-- END GOOGLE MAP -->
-
-            <a class="button long" id="map-button" style="display: none">
-                <div class="front">
-                    <span class="larger">Larger Map</span>
-                    <span class="smaller">Smaller Map</span>
-                </div>
-                <div class="bottom">
-                    <span class="larger">Larger Map</span>
-                    <span class="smaller">Smaller Map</span>
+                    View Our Clients
                 </div>
             </a>
-        </section><!-- END CONTACT SECTION -->
-        <!-- START PARALLAX SECTION -->
-        <section class="parallax">
-            <div class="row center">
-                <h2>Get in Touch</h2>
-                <h5 class="undertitle">We'd Love to Work With You</h5>
+        </div>
+    </section><!-- END ABOUT SECTION -->
+
+    <!-- START PARALLAX SECTION -->
+    <section class="parallax">
+        <div class="row center">
+            <h2>Our Process</h2>
+            <h5 class="undertitle">How We Bring Your Idea to Market</h5>
+        </div>
+        <div class="row gutters">
+            <div class="col span_12 ">
+                <!-- START PROCESS -->
+                <div class="process">
+                    <img src="images/about/5xProcess.png" />
+                </div>
+            </div>
+        </div>
+        <div class="row gutters">
+            <div class="col span_4">
+                <!-- START PROCESS -->
+                <div class="process">
+                    <div class="triangle big">
+                        1
+                    </div>
+                    <h4>Plan & Develop</h4>
+                    <p>
+                        We research and find the best way to build your idea. We plan a comprehensive approach will help define the problem, viability of the solution, and cost benefit for stakeholders. Next is the design process: simple, elegant solutions that are easy to use and easy to maintain is our focus. When it comes time to develop, our expert development team can deliver a high quality product, on time, with excellent results.
+                    </p>
+                </div><!-- END PROCESS -->
+            </div>
+            <div class="col span_4">
+                <!-- START PROCESS -->
+                <div class="process">
+                    <div class="triangle big">
+                        2
+                    </div>
+                    <h4>Deploy</h4>
+                    <p>
+                        Because execution is so crucial, we put a lot of effort and careful consideration into our approach. A complete deployment strategy insures your launch will be a success. This is what makes 5X Solutions different from it's competitors, the thought and care of your idea after the initial development process.
+                    </p><!-- END PROCESS -->
+                </div>
+            </div>
+            <div class="col span_4">
+                <!-- START PROCESS LAST -->
+                <div class="process last">
+                    <div class="triangle big">
+                        3
+                    </div>
+                    <h4>Manage</h4>
+                    <p>
+                        At 5X Solutions, we want your idea to succeed. That's why we want to ensure that after it is launched, your product stays successful and your vision is achieved. Our post production management and maintenance strategies will enhance the usability and life of the product.
+                    </p>
+                </div><!-- END PROCESS LAST -->
+            </div>
+        </div>
+    </section><!-- END PARALLAX SECTION -->
+
+
+
+
+
+    <!-- START TEAM SECTION -->
+    <section id="leadership">
+        <div class="row center">
+            <h2>The 5X Solutions Team</h2>
+            <h5 class="undertitle">Nerds Who Love What They Do</h5>
+        </div>
+
+        <div class="row gutters">
+            <div class="col span_4">
+                <!-- START TEAM MEMBER -->
+                <div class="team-member">
+                    <div class="img-container">
+                        <div class="layer">
+                            <div class="text">
+                                <h4>Ron de Frates</h4>
+                                <span class="undertitle">Co-Founder</span>
+                            </div>
+                        </div>
+                        <img src="images/team/RondeFrates.png" alt="Ron de Frates" />
+                    </div>
+
+                    <a class="triangle">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="triangle">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                    <a class="triangle">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </div><!-- END TEAM MEMBER -->
             </div>
 
-            <div class="row">
-                <!-- START CONTACT FORM -->
-                <!-- START ALERT BOX -->
-                <div id='contact-error' class="alert alert-box error" style="display: none;">
-                    <i class="fa fa-bolt"></i><span>Error Message</span>
-                    <a class="close">x</a>
-                </div><!-- END ALERT BOX -->
-                <!-- START ALERT BOX -->
-                <div id='contact-success' class="alert alert-box success" style="display: none;">
-                    <i class="fa fa-check"></i><span>Success Message</span>
-                    <a class="close">x</a>
-                </div><!-- END ALERT BOX -->
+            <div class="col span_4">
+                <!-- START TEAM MEMBER -->
+                <div class="team-member">
+                    <div class="img-container">
+                        <div class="layer">
+                            <div class="text">
+                                <h4>Mandy Meadows</h4>
+                                <span class="undertitle">Associate</span>
+                            </div>
+                        </div>
+                        <img src="images/team/MandyMeadows.png" alt="Mandy Meadows" />
+                    </div>
 
-                <div class="contact-form">
-                    <form id="contact-form" method="POST">
-                        <!--[if lte IE 9]>
-                        <span>Your Name</span>
-                        <![endif]-->
-                        <input class="text" type="text" placeholder="Your Name" value="" name="name" />
-                        <!--[if lte IE 9]>
-                        <span>Your eMail</span>
-                        <![endif]-->
-                        <input class="text" type="text" placeholder="Your eMail" value="" name="email" />
-                        <!--[if lte IE 9]>
-                        <span>Your Message</span>
-                        <![endif]-->
-                        <textarea placeholder="Your Message" name="message"></textarea>
-                        <input class="submit" type="submit" value="Send Message" name="" />
-                    </form>
-                </div><!-- END CONTACT FORM -->
+                    <a class="triangle">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="triangle">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                    <a class="triangle">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div><!-- END TEAM MEMBER -->
             </div>
-        </section><!-- END PARALLAX SECTION -->
-    </div><!-- END PAGE WRAPPER -->
-    <!-- START AJAX CONTENT -->
-    <div id="ajax-content">
-        <a id="ajax-closer" class="close-button">back to grid</a>
 
-        <div id="ajax-load-container">
-            <!-- AJAX CONTENT LOAD HERE -->
+            <div class="col span_4">
+                <!-- START TEAM MEMBER -->
+                <div class="team-member">
+                    <div class="img-container">
+                        <div class="layer">
+                            <div class="text">
+                                <h4>John D. Beneventi</h4>
+                                <span class="undertitle">Co-Founder</span>
+                            </div>
+                        </div>
+                        <img src="images/team/JohnDBeneventi.png" alt="John D. Beneventi" />
+                    </div>
+
+                    <a class="triangle">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <a class="triangle">
+                        <i class="fa fa-envelope"></i>
+                    </a>
+                    <a class="triangle">
+                        <i class="fa fa fa-linkedin"></i>
+                    </a>
+                </div><!-- END TEAM MEMBER -->
+            </div>
         </div>
-    </div><!-- END AJAX CONTENT -->
-    <!-- START PAGE FOOTER -->
-    <footer id="page-footer">
-        <div class="row bottom-line">
-            © 2015 - 5X Solutions, Inc.
+    </section><!-- END TEAM SECTION -->
+
+
+    <!-- START PARALLAX SECTION -->
+    <section class="parallax" id="clients">
+        <div class="row center">
+            <h2>Our Fantastic Clients</h2>
+            <h5 class="undertitle">Organizations the founders have worked with:</h5>
         </div>
-    </footer><!-- END PAGE FOOTER -->
-    <!-- PLUGINS -->
-    <script type="text/javascript" src="scripts/respond.min.js"></script>
-    <script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
-    <script type="text/javascript" src="scripts/owl.carousel.js"></script>
-    <script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
-    <script type="text/javascript" src="scripts/jquery.mixitup.js"></script>
-    <script type="text/javascript" src="scripts/jquery.grid-a-licious.js"></script>
-    <script type="text/javascript" src="scripts/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="scripts/SmoothScroll.js"></script>
-    <script src="http://maps.googleapis.com/maps/api/js"></script>
-    <script type="text/javascript" src="scripts/jquery.googlemap.js"></script>
+
+        <!-- START CLIENT CAROUSEL -->
+        <div class="client-carousel owl-carousel">
+            <div class="item"><img src="images/clients/FannieMae.png" alt="" /></div>
+            <div class="item"><img src="images/clients/freddiemac.png" alt="" /></div>
+            <div class="item"><img src="images/clients/quicken.png" alt="" /></div>
+            <div class="item"><img src="images/clients/base11.png" alt="" /></div>
+            <div class="item"><img src="images/clients/vivamazing.png" alt="" /></div>
+            <div class="item"><img src="images/clients/verifymyrent.png" alt="" /></div>
+            <div class="item"><img src="images/clients/neighborworks.png" alt="" /></div>
+            <div class="item"><img src="images/clients/philadelphia.png" alt="" /></div>
+            <div class="item"><img src="images/clients/inhp.png" alt="" /></div>
+            <div class="item"><img src="images/clients/minnesota.png" alt="" /></div>
+            <div class="item"><img src="images/clients/hpn.png" alt="" /></div>
+            <div class="item"><img src="images/clients/nahrep.png" alt="" /></div>
+            <div class="item"><img src="images/clients/hud.png" alt="" /></div>
+            <div class="item"><img src="images/clients/NCST.gif" alt="" /></div>
+            <div class="item"><img src="images/clients/venta.png" alt="" /></div>
+            <div class="item"><img src="images/clients/espanol.png" alt="" /></div>
+        </div><!-- END CLIENT CAROUSEL -->
+    </section><!-- END PARALLAX SECTION -->
 
 
-    <!-- THEME JAVASCRIPT -->
-    <script type="text/javascript" src="scripts/theme.script.js"></script>
-    <script type="text/javascript" src="scripts/theme.mail.js"></script>
+    <!-- START clients SECTION -->
+    <section id="" class="arrow">
+        <div class="row center">
+            <h1 class="underline">Clients</h1>
+            <h4 class="undertitle">Organizations the founders have worked with</h4>
+        </div>
 
-    <!-- SETTINGS theme.settings.js:
-     1. BANNER CAROUSEL
-     2. PARALLAX SECTIONS
-     3. CLIENT CAROUSEL
-     4. COMMENT CAROUSEL
-     5. GOOGLE MAP
-    -->
-    <script type="text/javascript" src="scripts/theme.settings.js"></script>
+        <div class="row">
+            <p class="text-block">
+                We very proud of all of our clients and their successes. We believe it says something about a business to care for it's clients; that's why we ensure the satisfaction of all of those we work with. Working closely with our clients and using clear communication has resulted in the success of their ideas.
+            </p>
+        </div>
+
+    </section><!-- END clients SECTION -->
+
+    <!-- START PARALLAX SECTION -->
+    <section class="parallax">
+        <div class="row center">
+            <h2>What Our Clients Say</h2>
+            <h5 class="undertitle">We Are Happy About Every Review</h5>
+        </div>
+
+        <!-- START COMMENT CAROUSEL -->
+        <div class="comment-carousel-container">
+            <div class="owl-carousel comment-carousel">
+                <div class="item">
+                    <div class="img-container">
+                        <img src="images/comments/testimonial.png" alt="" />
+                    </div>
+                    <div class="comment">
+                        "5x is really good at understanding, reducing, and simplifying complex business problems. All communication was very clear and professional. They helped my idea reach it's full potential"
+                    </div>
+                    <span class="name">
+                        John Smith, Freddie Mac
+                    </span>
+                </div>
+                <div class="item">
+                    <div class="img-container">
+                        <img src="images/comments/testimonial.png" alt="" />
+                    </div>
+                    <div class="comment">
+                        "5x is really good at understanding, reducing, and simplifying complex business problems. All communication was very clear and professional. They helped my idea reach it's full potential"
+                    </div>
+                    <span class="name">
+                        John Smith, Freddie Mac
+                    </span>
+                </div>
+                <div class="item">
+                    <div class="img-container">
+                        <img src="images/comments/testimonial.png" alt="" />
+                    </div>
+                    <div class="comment">
+                        "5x is really good at understanding, reducing, and simplifying complex business problems. All communication was very clear and professional. They helped my idea reach it's full potential"
+                    </div>
+                    <span class="name">
+                        John Smith, Freddie Mac
+                    </span>
+                </div>
+            </div>
+        </div><!-- END COMMENT CAROUSEL -->
+    </section><!-- END PARALLAX SECTION -->
+
+
+
+    <!-- START SKILLS SECTION -->
+    <section id="skills" class="arrow">
+        <div class="row center">
+            <h1 class="underline">Our Skills</h1>
+            <h4 class="undertitle">What We Bring To the Table</h4>
+        </div>
+
+        <div class="row gutters">
+            <div class="col span_3">
+                <div class="service">
+                    <div class="icon">
+                        <i class="fa fa-usd"></i>
+                    </div>
+                    <h4>Finance</h4>
+                    <p>
+                        We have financial professionals working with us to minimize costs and maximize revenue.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col span_3">
+                <div class="service">
+                    <div class="icon">
+                        <i class="fa fa-tablet"></i>
+                    </div>
+                    <h4>Technology</h4>
+                    <p>
+                        We work with the most up to date to technology because the modern business needs it to have the competitive edge.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col span_3">
+                <div class="service">
+                    <div class="icon">
+                        <i class="fa fa-pie-chart"></i>
+                    </div>
+                    <h4>Marketing</h4>
+                    <p>
+                        We have been established for 16 years, and over that time we have built connections and extended our reach to give your idea the exposure needed.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col span_3">
+                <div class="service">
+                    <div class="icon">
+                        <i class="fa fa-sitemap"></i>
+                    </div>
+                    <h4>Process Analysis</h4>
+                    <p>
+                        We believe attention to detail is extremely important. We analyze the execution of nearly every aspect to increase efficiency of the business.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row gutters">
+            <div class="col span_3">
+                <div class="service">
+                    <div class="icon">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <h4>Web / App Development</h4>
+                    <p>
+                        We utilize professional developers to give your idea beautiful aesthetic and incredible functionality.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col span_3">
+                <div class="service">
+                    <div class="icon">
+                        <i class="fa fa-sort-numeric-desc"></i>
+                    </div>
+                    <h4>Data Collection and Analysis</h4>
+                    <p>
+                        Our team knows how to interpret data collected and turn that into improving the product or business model
+                    </p>
+                </div>
+            </div>
+
+            <div class="col span_3">
+                <div class="service">
+                    <div class="icon">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <h4>Branding and Consumer Research</h4>
+                    <p>
+                        We want your idea to succeed, that's why we work to establish your business as a serious competitor in your market.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section><!-- END SKILLS SECTION -->
+
+
+
+    <!-- START PARALLAX SECTION -->
+    <section class="parallax image" style="color:#40434A;">
+        <div class="row center" >
+            <h2>Facts About Us</h2>
+            <h5 class="undertitle">Numbers Don't Lie</h5>
+        </div>
+
+        <div class="row">
+            <!-- START COUNTER -->
+            <ul class="counter">
+                <li>
+                    <div class="triangle big white">
+                        <span class="number">65</span>
+                    </div>
+                    <h5>Utilizing our skills</h5>
+                </li>
+                <li>
+                    <div class="triangle big white">
+                        <span class="number">63</span>
+                    </div>
+                    <h5>Happy Clients</h5>
+                </li>
+                <li>
+                    <div class="triangle big white">
+                        <span class="number">68</span>
+                    </div>
+                    <h5>Finished Projects</h5>
+                </li>
+                <li>
+                    <div class="triangle big white">
+                        <span class="number">55</span>
+                    </div>
+                    <h5>Product Successes</h5>
+                </li>
+            </ul><!-- END COUNTER -->
+        </div>
+    </section><!-- END PARALLAX SECTION -->
+
+
+
+    <!-- START WORK SECTION -->
+    <section class="arrow" id="projects">
+        <div class="row center">
+            <h1 class="underline">Selected Projects</h1>
+            <h4 class="undertitle">What We've Done / What We are Working On</h4>
+        </div>
+
+        <div class="row">
+            <p class="text-block">
+                The principles of 5X Solutions have worked together for over 16 years. Click on the types of projects below to learn more about examples of their important works together.
+            </p>
+        </div>
+
+        <!-- START FILTER TABS -->
+        <ul id="work-filter" style="display: none" class="filter-tabs">
+            <li class="work-filter active" data-filter="all">
+                <a class="button">
+                    <div class="front">
+                        All
+                    </div>
+                    <div class="bottom">
+                        All
+                    </div>
+                </a>
+            </li>
+
+            <li class="work-filter" data-filter=".frontend">
+                <a class="button">
+                    <div class="front">
+                        Webdesign
+                    </div>
+                    <div class="bottom">
+                        Webdesign
+                    </div>
+                </a>
+            </li>
+
+            <li class="work-filter" data-filter=".backend">
+                <a class="button">
+                    <div class="front">
+                        Wordpress
+                    </div>
+                    <div class="bottom">
+                        Wordpress
+                    </div>
+                </a>
+            </li>
+        </ul><!-- END FILTER TABS -->
+
+
+        <!-- START WORK GRID -->
+        <ul id="work-grid">
+            <li class="work-mix frontend">
+                <a data-work-link="work-01.html">
+                    <div class="layer">
+                        <div class="text">
+                            <h3>All</h3>
+                            <span class="undertitle">Click To See More Details</span>
+                        </div>
+                    </div>
+                    <img src="images/work/all.png" alt="" />
+                </a>
+            </li>
+
+            <li class="work-mix backend">
+                <a data-work-link="work-05.html">
+                    <div class="layer">
+                        <div class="text">
+                            <h3>Digital Marketing</h3>
+                            <span class="undertitle">Click To See More Details</span>
+                        </div>
+                    </div>
+                    <img src="images/work/marketing.jpg" alt="" />
+                </a>
+            </li>
+
+            <li class="work-mix frontend">
+                <a data-work-link="work-03.html">
+                    <div class="layer">
+                        <div class="text">
+                            <h3>Metrics & Measurement</h3>
+                            <span class="undertitle">Click To See More Details</span>
+                        </div>
+                    </div>
+                    <img src="images/work/measure.png" alt="" />
+                </a>
+            </li>
+
+            <li class="work-mix backend">
+                <a data-work-link="work-04.html">
+                    <div class="layer">
+                        <div class="text">
+                            <h3>Scalability/Efficiency</h3>
+                            <span class="undertitle">Click To See More Details</span>
+                        </div>
+                    </div>
+                    <img src="images/work/scale.png" alt="" />
+                </a>
+            </li>
+
+            <li class="work-mix backend">
+                <a data-work-link="work-02.html">
+                    <div class="layer">
+                        <div class="text">
+                            <h3>Management Systems</h3>
+                            <span class="undertitle">Click To See More Details</span>
+                        </div>
+                    </div>
+                    <img src="images/work/manager.jpeg" alt="" />
+                </a>
+            </li>
+
+            <li class="work-mix frontend">
+                <a data-work-link="work-06.html">
+                    <div class="layer">
+                        <div class="text">
+                            <h3>Technology Integration</h3>
+                            <span class="undertitle">Click To See More Details</span>
+                        </div>
+                    </div>
+                    <img src="images/work/tech.jpg" alt="" />
+                </a>
+            </li>
+        </ul><!-- END WORK GRID -->
+
+    </section><!-- END WORK SECTION -->
+
+
+
+
+    <!-- START NEWS SECTION -->
+    <section id="news" class="arrow">
+        <div class="row center">
+            <h1 class="underline">News</h1>
+            <h4 class="undertitle">More Then Just A Blog</h4>
+        </div>
+
+        <div class="blogDiv feedget-container horizontal ui-widget col-md-9"
+             style=" float: none; text-align: center; overflow: hidden; position: relative;" id="feedget0">
+        </div>
+
+
+        <!-- START NEWS GRID -->
+        <ul id="news-grid" >
+            <li>
+                <div class="date">
+                    16.06.2014
+                </div>
+
+                <div class="img-container">
+                    <a data-news-link="news-01.html" class="layer">
+                        <div class="text">
+                            <span class="comments">4 Comments</span>
+                            <span class="undertitle">More Details</span>
+                        </div>
+                    </a>
+                    <img src="images/news/thumbnail-01.jpg" alt="" />
+                </div>
+
+                <h3>Post With Video</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis commodo ligula eget parturient montes, nascetur ridiculus mus. Donec natoque penatibus et magnis dis commodo quam felis, ultricies nec, pellentesque eu. Donec natoque penatibus et magnis.
+                </p>
+
+                <a data-news-link="news-01.html" class="read-more">read more</a>
+            </li>
+
+            <li>
+                <div class="date">
+                    02.06.2014
+                </div>
+
+                <div class="img-container">
+                    <a data-news-link="news-02.html" class="layer">
+                        <div class="text">
+                            <span class="comments">2 Comments</span>
+                            <span class="undertitle">More Details</span>
+                        </div>
+                    </a>
+                    <img src="images/news/thumbnail-02.jpg" alt="" />
+                </div>
+
+                <h3>On The Road</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
+                </p>
+
+                <a data-news-link="news-02.html" class="read-more">read more</a>
+            </li>
+
+            <li>
+                <div class="date">
+                    22.05.2014
+                </div>
+
+                <div class="img-container">
+                    <a data-news-link="news-03.html" class="layer">
+                        <div class="text">
+                            <span class="comments">3 Comments</span>
+                            <span class="undertitle">More Details</span>
+                        </div>
+                    </a>
+                    <img src="images/news/thumbnail-03.jpg" alt="" />
+                </div>
+
+                <h3>The Big City</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu pretium.
+                </p>
+
+                <a data-news-link="news-03.html" class="read-more">read more</a>
+            </li>
+
+            <li>
+                <div class="date">
+                    07.05.2014
+                </div>
+
+                <div class="img-container">
+                    <a data-news-link="news-04.html" class="layer">
+                        <div class="text">
+                            <span class="comments">8 Comments</span>
+                            <span class="undertitle">More Details</span>
+                        </div>
+                    </a>
+                    <img src="images/news/thumbnail-04.jpg" alt="" />
+                </div>
+
+                <h3>Coffee And Cakes</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes.
+                </p>
+
+                <a data-news-link="news-04.html" class="read-more">read more</a>
+            </li>
+
+            <li>
+                <div class="date">
+                    28.04.2014
+                </div>
+
+                <div class="img-container">
+                    <a data-news-link="news-05.html" class="layer">
+                        <div class="text">
+                            <span class="comments">3 Comments</span>
+                            <span class="undertitle">More Details</span>
+                        </div>
+                    </a>
+                    <img src="images/news/thumbnail-05.jpg" alt="" />
+                </div>
+
+                <h3>One Day In Paris</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.
+                </p>
+
+                <a data-news-link="news-05.html" class="read-more">read more</a>
+            </li>
+
+            <li>
+                <div class="date">
+                    17.04.2014
+                </div>
+
+                <div class="img-container">
+                    <a data-news-link="news-06.html" class="layer">
+                        <div class="text">
+                            <span class="comments">6 Comments</span>
+                            <span class="undertitle">More Details</span>
+                        </div>
+                    </a>
+                    <img src="images/news/thumbnail-06.jpg" alt="" />
+                </div>
+
+                <h3>A Beautiful Sunset</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis commodo ligula eget parturient montes, nascetur ridiculus mus. Donec natoque penatibus et magnis dis commodo quam felis, ultricies nec pellentesque
+                </p>
+
+                <a data-news-link="news-06.html" class="read-more">read more</a>
+            </li>
+        </ul>
+        <!-- END NEWS GRID -->
+
+        <!-- START NEWS LOAD MORE -->
+        <a class="button long" id="load-more-news">
+            <div class="front">
+                Load More
+            </div>
+            <div class="bottom">
+                Load More
+            </div>
+        </a><!-- END NEWS LOAD MORE -->
+    </section><!-- END NEWS SECTION -->
+
+
+    <!-- START DEVIDER -->
+    <div class="devider"></div><!-- END DEVIDER -->
+
+
+
+    <!-- START CONTACT SECTION -->
+    <section id="contact" class="arrow">
+        <div class="row center">
+            <h1 class="underline">Contact</h1>
+            <h4 class="undertitle">We Are Ready For Your Project</h4>
+        </div>
+
+        <div class="row">
+            <p class="text-block">
+                We would love to do business with you. Make a decision you won't regret and contact us now.
+            </p>
+        </div>
+
+        <!-- START CONTACT DETAILS -->
+        <div class="row contact-details">
+            <div class="adress">
+                5X Solutions
+                <br>
+                P.O. Box 8018
+                <br>
+                Rancho Santa Fe,
+                CA 92067
+            </div>
+            <div class="phone">
+                +1 (858) 759-7028
+            </div>
+
+            <a class="button big">
+                <div class="front">
+                    support@youradress.com
+                </div>
+                <div class="bottom">
+                    support@youradress.com
+                </div>
+            </a>
+        </div><!-- END CONTACT DETAILS -->
+
+        <!-- START GOOGLE MAP -->
+        <div id="googlemap" style="display: none"></div><!-- END GOOGLE MAP -->
+
+        <a class="button long" id="map-button" style="display: none">
+            <div class="front">
+                <span class="larger">Larger Map</span>
+                <span class="smaller">Smaller Map</span>
+            </div>
+            <div class="bottom">
+                <span class="larger">Larger Map</span>
+                <span class="smaller">Smaller Map</span>
+            </div>
+        </a>
+    </section><!-- END CONTACT SECTION -->
+
+
+
+    <!-- START PARALLAX SECTION -->
+    <section class="parallax">
+        <div class="row center">
+            <h2>Get in Touch</h2>
+            <h5 class="undertitle">We'd Love to Work With You</h5>
+        </div>
+
+        <div class="row">
+            <!-- START CONTACT FORM -->
+            <!-- START ALERT BOX -->
+            <div id='contact-error' class="alert-box error" style="display: none;">
+                <i class="fa fa-bolt"></i><span>Error Message</span>
+                <a class="close">x</a>
+            </div><!-- END ALERT BOX -->
+
+            <!-- START ALERT BOX -->
+            <div id='contact-success' class="alert-box success" style="display: none;">
+                <i class="fa fa-check"></i><span>Success Message</span>
+                <a class="close">x</a>
+            </div><!-- END ALERT BOX -->
+
+            <div class="contact-form">
+                <form id="contact-form" method="POST">
+                    <!--[if lte IE 9]>
+                    <span>Your Name</span>
+                    <![endif]-->
+                    <input class="text" type="text" placeholder="Your Name" value="" name="name" />
+                    <!--[if lte IE 9]>
+                    <span>Your eMail</span>
+                    <![endif]-->
+                    <input class="text" type="text" placeholder="Your eMail" value="" name="email" />
+                    <!--[if lte IE 9]>
+                    <span>Your Message</span>
+                    <![endif]-->
+                    <textarea placeholder="Your Message" name="message"></textarea>
+                    <input class="submit" type="submit" value="Send Message" name="" />
+                </form>
+            </div><!-- END CONTACT FORM -->
+        </div>
+    </section><!-- END PARALLAX SECTION -->
+</div><!-- END PAGE WRAPPER -->
+
+
+
+
+<!-- START AJAX CONTENT -->
+<div id="ajax-content">
+    <a id="ajax-closer" class="close-button">back to grid</a>
+
+    <div id="ajax-load-container">
+        <!-- AJAX CONTENT LOAD HERE -->
+    </div>
+</div><!-- END AJAX CONTENT -->
+
+
+
+
+<!-- START PAGE FOOTER -->
+<footer id="page-footer">
+    <div class="row bottom-line">
+        © 2015 - 5X Solutions, Inc.
+    </div>
+</footer><!-- END PAGE FOOTER -->
+
+
+
+
+<!-- PLUGINS -->
+<script type="text/javascript" src="scripts/respond.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="scripts/owl.carousel.js"></script>
+<script type="text/javascript" src="scripts/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="scripts/jquery.mixitup.js"></script>
+<script type="text/javascript" src="scripts/jquery.grid-a-licious.js"></script>
+<script type="text/javascript" src="scripts/jquery.fitvids.js"></script>
+<script type="text/javascript" src="scripts/SmoothScroll.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script type="text/javascript" src="scripts/jquery.googlemap.js"></script>
+
+
+<!-- THEME JAVASCRIPT -->
+<script type="text/javascript" src="scripts/theme.script.js"></script>
+<script type="text/javascript" src="scripts/theme.mail.js"></script>
+
+<!-- SETTINGS theme.settings.js:
+ 1. BANNER CAROUSEL
+ 2. PARALLAX SECTIONS
+ 3. CLIENT CAROUSEL
+ 4. COMMENT CAROUSEL
+ 5. GOOGLE MAP
+-->
+<script type="text/javascript" src="scripts/theme.settings.js"></script>
 
 </body>
 </html>
