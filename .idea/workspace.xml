@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a4ef41f4-ba8a-432e-8083-b1988c52cc07" name="Default" comment="First Time merging my files">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="a4ef41f4-ba8a-432e-8083-b1988c52cc07" name="Default" comment="First Time merging my files" />
     <ignored path="5XWebHip.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/5XWebHip/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48308524" vertical-offset="1083" max-vertical-offset="15615">
-              <caret line="96" column="42" selection-start-line="96" selection-start-column="42" selection-end-line="96" selection-end-column="42" />
+            <state vertical-scroll-proportion="2.8822734" vertical-offset="0" max-vertical-offset="15615">
+              <caret line="142" column="91" selection-start-line="142" selection-start-column="91" selection-end-line="142" selection-end-column="91" />
               <folding>
                 <element signature="n#style#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -52,13 +50,8 @@
       <file leaf-file-name="shortcodes.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5XWebHip/css/shortcodes.css">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
             <state vertical-scroll-proportion="0.0" vertical-offset="8734" max-vertical-offset="16890">
               <caret line="595" column="61" selection-start-line="595" selection-start-column="61" selection-end-line="595" selection-end-column="61" />
-=======
-            <state vertical-scroll-proportion="-98.703705" vertical-offset="4205" max-vertical-offset="9090">
-              <caret line="458" column="62" selection-start-line="458" selection-start-column="59" selection-end-line="458" selection-end-column="62" />
->>>>>>> parent of d97ad53... banner update
               <folding />
             </state>
           </provider>
@@ -119,9 +112,9 @@
         <option value="$PROJECT_DIR$/5XWebHip/scripts/blogFeed/feedget-1.1.2.js" />
         <option value="$PROJECT_DIR$/5XWebHip/scripts/theme.settings.js" />
         <option value="$PROJECT_DIR$/5XWebHip/scripts/owl.carousel.js" />
+        <option value="$PROJECT_DIR$/5XWebHip/index.html" />
         <option value="$PROJECT_DIR$/5XWebHip/css/responsive.css" />
         <option value="$PROJECT_DIR$/5XWebHip/css/shortcodes.css" />
-        <option value="$PROJECT_DIR$/5XWebHip/index.html" />
       </list>
     </option>
   </component>
@@ -129,17 +122,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-<<<<<<< HEAD
     <option name="x" value="74" />
     <option name="y" value="26" />
     <option name="width" value="1477" />
     <option name="height" value="896" />
-=======
-    <option name="x" value="89" />
-    <option name="y" value="23" />
-    <option name="width" value="1466" />
-    <option name="height" value="821" />
->>>>>>> parent of d97ad53... banner update
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -376,26 +362,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-<<<<<<< HEAD
     <frame x="74" y="26" width="1477" height="896" extended-state="0" />
-=======
-    <frame x="89" y="23" width="1466" height="821" extended-state="0" />
->>>>>>> parent of d97ad53... banner update
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-<<<<<<< HEAD
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24862637" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-=======
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.49965397" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24982698" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
->>>>>>> parent of d97ad53... banner update
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -703,7 +678,6 @@
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/5XWebHip/scripts/theme.script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="4.790576" vertical-offset="0" max-vertical-offset="13770">
@@ -757,8 +731,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/5XWebHip/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48308524" vertical-offset="1083" max-vertical-offset="15615">
-          <caret line="96" column="42" selection-start-line="96" selection-start-column="42" selection-end-line="96" selection-end-column="42" />
+        <state vertical-scroll-proportion="2.8822734" vertical-offset="0" max-vertical-offset="15615">
+          <caret line="142" column="91" selection-start-line="142" selection-start-column="91" selection-end-line="142" selection-end-column="91" />
           <folding>
             <element signature="n#style#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -776,7 +750,5 @@
         </state>
       </provider>
     </entry>
-=======
->>>>>>> parent of d97ad53... banner update
   </component>
 </project>
