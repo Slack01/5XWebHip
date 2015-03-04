@@ -30,7 +30,7 @@
             navigation : true,
             pagination: false,
             singleItem: true,
-            transitionStyle : "fade",
+            transitionStyle : false,
             autoPlay: '5000'
         });
     }

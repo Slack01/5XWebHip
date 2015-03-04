@@ -779,6 +779,71 @@ if (typeof Object.create !== "function") {
         transition3d : function (value) {
             var base = this;
             base.$owlWrapper.css(base.doTranslate(value));
+
+            var $top = $('body').scrollTop();
+            var nextSlide = $('.owl-item').css('width');
+            var nextNum = nextSlide.substring(0,4);
+            nextNum = -nextNum;
+            var lastSlide = nextNum*2;
+            var winHeight = $(window).height();
+
+            if($top <= winHeight) {
+                var position = value;
+
+                if (position == 0) {
+                    $('#logo').css('opacity', '0');
+                    $('#fade1').animate({
+                        opacity:1
+                    },400);
+                    $('#fade2').animate({
+                        opacity:0
+                    },400);
+                    $('#fade3').animate({
+                        opacity:0
+                    },400);
+                }
+                else if(position == nextNum){
+                    $('#logo').css('opacity', '1');
+                    $('#fade2').animate({
+                        opacity:1
+                    },400);
+                    $('#fade1').animate({
+                        opacity:0
+                    },400);
+                    $('#fade3').animate({
+                        opacity:0
+                    },400);
+                }
+                else if(position == lastSlide){
+                    $('#logo').css('opacity', '1');
+                    $('#fade3').animate({
+                        opacity:1
+                    },400);
+                    $('#fade1').animate({
+                        opacity:0
+                    },400);
+                    $('#fade2').animate({
+                        opacity:0
+                    },400);
+                }
+                else {
+                    $('#logo').css('opacity', '1');
+                    $('#fade1').animate({
+                        opacity:1
+                    },400);
+                    $('#fade2').animate({
+                        opacity:1
+                    },400);
+                    $('#fade3').animate({
+                        opacity:1
+                    },400);
+                }
+            }
+            else {
+                $('#logo').css('opacity', '1');
+
+            }
+
         },
 
         css2move : function (value) {
@@ -797,7 +862,7 @@ if (typeof Object.create !== "function") {
                 complete : function () {
                     base.isCssFinish = true;
 
-                    var $top = $('body').scrollTop();
+                    var $top = $(document).scrollTop();
                     var nextSlide = $('.owl-item').css('width');
                     var nextNum = nextSlide.substring(0,4);
                     nextNum = -nextNum;
@@ -811,6 +876,9 @@ if (typeof Object.create !== "function") {
                             $('#logo').css('opacity', '0');
                             $('#fade1').animate({
                                 opacity:1
+                            },400);
+                            $('#fade2').animate({
+                                opacity:0
                             },400);
                             $('#fade3').animate({
                                 opacity:0
@@ -832,6 +900,9 @@ if (typeof Object.create !== "function") {
                             $('#logo').css('opacity', '1');
                             $('#fade3').animate({
                                 opacity:1
+                            },400);
+                            $('#fade1').animate({
+                                opacity:0
                             },400);
                             $('#fade2').animate({
                                 opacity:0
@@ -881,7 +952,6 @@ if (typeof Object.create !== "function") {
             isTouch = "ontouchstart" in window || window.navigator.msMaxTouchPoints;
 
             base.browser = {
-                "support3d" : support3d,
                 "isTouch" : isTouch
             };
         },
