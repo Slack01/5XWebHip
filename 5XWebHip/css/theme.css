@@ -106,9 +106,10 @@ body {
 }
 
 #logo {
+    height: 135px;
     position: fixed;
-    left: 50px;
-    top: 50px;
+    left: 25px;
+    top: 25px;
     z-index: 98;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
@@ -120,7 +121,9 @@ body {
     display: none;
 }
 
-
+#logoImg {
+    height: 135px;
+}
 
 /* ============ 3.1 MAIN NAVIGATION ============  */
 
@@ -401,14 +404,15 @@ section.video video {
 }
 
 .banner-content h2 {
-    font-size: 3em;
+    font-size: 4.7em;
     line-height: 1.4;
     margin-bottom: 0;
+    color: white;
 }
 
 .banner-content h4 {
     margin-bottom: 40px;
-    font-size: 1.8em;
+    font-size: 1.2em;
     line-height: 1.4;
 }
 

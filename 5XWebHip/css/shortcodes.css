@@ -59,16 +59,18 @@ h6 {
 
 h1 {
     font-size: 1.7em;
+    color: darkred;
 }
 h2 {
     font-size: 1.5em;
+    color: darkred;
 }
 h3 {
     font-size: 1.3em;
     margin-bottom: 10px;
 }
 h4 {
-    font-size: 1.2em;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 h5 {

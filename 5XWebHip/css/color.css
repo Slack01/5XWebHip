@@ -101,7 +101,10 @@ input.submit,
     background-color: #fff;
 }
 
-
+.button.white:hover, .button.color:hover {
+    background-color: darkred;
+    color: white;
+}
 
 section.parallax,
 input.submit.dark:hover,

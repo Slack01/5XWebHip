@@ -25,13 +25,13 @@
     if(bannerCarousel.length) // CHECK IF ELEMENT EXIST
     {
         bannerCarousel.owlCarousel({
-            slideSpeed: 800,
-            paginationSpeed: 2000,
+            slideSpeed: 600,
+            paginationSpeed: 2800,
             navigation : true,
             pagination: false,
             singleItem: true,
             transitionStyle : false,
-            autoPlay: '5000'
+            autoPlay: '7000'
         });
     }
 
