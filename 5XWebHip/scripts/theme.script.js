@@ -66,6 +66,16 @@
         scrollOffset    = windowHeight - 100;
         setBanner();
         sizeWorkGrid();
+        if(windowWidth <= 1090) {
+            $('.span_2').css('display', 'none');
+            $('.spans').removeClass('span_3').addClass('span_4');
+            $('.spans').css('margin-left', '3%');
+        }
+        else {
+            $('.span_2').css('display', 'block');
+            $('.spans').css('margin-left', '5%');
+            $('.spans').removeClass('span_4').addClass('span_3');
+        }
     }
 
 
